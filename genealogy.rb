@@ -289,18 +289,18 @@ require 'erb'
 @recent_languages = ["C# 5", "C++ 1y", "Swift", "C11", "Perl 5.20", "ADA 2012", "Delphi XE4", "COBOL 2014", "FORTRAN 2015", "Rust 1.0", "Elixir 1.0", "Erlang 17.5", "Javascript ES6", "Go 1.0", "Self 4.5", "Julia", "Haskell 2010", "F# 3.1.1"]
 
 @languages_by_year = [
-  { year: 1955, languages: ["Speedcode", "FORTRAN", "ALGOL 58", "COBOL", "Lisp", "FORTRAN II"] },
+  { year: 1955, languages: ["Speedcode", "FORTRAN", "ALGOL 58", "FLOW-MATIC", "COBOL", "Lisp", "FORTRAN II"] },
   { year: 1960, languages: ["CPL", "PL/I", "COBOL 60", "ALGOL 60", "SNOBOL", "APL", "FORTRAN IV"] },
   { year: 1965, languages: ["Simula", "Simula 67", "BCPL", "B", "ALGOL W", "FORTRAN 66", "ISWIM", "MUMPS"] },
-  { year: 1970, languages: ["Modula", "Smalltalk", "C", "Pascal", "ANSI COBOL", "ALGOL 68", "Planner", "Prolog", "CLU", "Forth", "ML", "Hope"] },
+  { year: 1970, languages: ["Modula", "Smalltalk", "C", "Pascal", "ANSI COBOL", "ALGOL 68", "Planner", "Prolog", "CLU", "Forth", "ML", "Hope", "Mesa"] },
   { year: 1975, languages: ["C with Classes", "MODULA-2", "AWK", "FORTRAN 77", "Scheme"] },
   { year: 1980, languages: ["C++", "Objective-C", "ADA", "ADA 83", "Turbo Pascal", "PIM 2", "ABC", "MODULA-3", "Common Lisp", "occam"] },
   { year: 1985, languages: ["Simula 87", "Perl", "Eiffel", "ANSI ADA", "PIM 3", "Object Pascal", "PIM 4",  "Oberon", "Erlang", "Self", "Caml", "Miranda", "Clean"] },
-  { year: 1990, languages: ["Lua", "Python", "GNU Objective-C", "ANSI C", "Perl 5", "Pike", "FORTRAN 90", "Dylan", "Haskell"] },
+  { year: 1990, languages: ["Lua", "Python", "GNU Objective-C", "ANSI C", "Standard ML", "Perl 5", "Pike", "FORTRAN 90", "Dylan", "Haskell"] },
   { year: 1995, languages: ["Java", "C99", "ADA 95", "Delphi", "Delphi 5", "ISO MODULA-2", "FORTRAN 95",  "Scheme R5RS", "Javascript", "Javascript ES1", "Javascript ES3", "REBOL", "REBOL 2", "OCaml",  "Haskell 98", "Caché", "PHP/FI", "PHP 3", "Ruby", "Ruby 1.2", "Ruby 1.4"] },
   { year: 2000, languages: ["Python 2", "Scala", "C#", "D", "Perl 5.6", "Perl 5.8", "COBOL 2002", "Delphi 7", "FORTRAN 2003", "REBOL/Command", "REBOL/View", "REBOL/SDK", "PHP 4", "PHP 5", "Ruby 1.6", "Ruby 1.8", "Factor"] },
-  { year: 2005, languages: ["Python 3", "J2SE 5", "C# 2", "C# 3", "D2", "Perl 5.10", "Scheme R7RS", "Go", "Rust", "REBOL 3", "Clojure", "Haskell Prime", "F#", "Ruby 1.9"] },
-  { year: 2010, languages: ["C# 4", "C++ 0x", "C11", "ADA 2012", "Delphi XE", "Javascript ES5.1", "F# 2", "C# 5", "C++ 1y", "Swift", "C11", "Perl 5.20", "ADA 2012", "Delphi XE4", "COBOL 2014", "Elixir", "Elixir 1.0", "Javascript ES6", "Go 1.0", "Self 4.5", "Julia", "Haskell 2010", "F# 3.1.1", "Hack", "PHP 5.6.10" , "Ruby 2.1", "Ruby 2.2"] },
+  { year: 2005, languages: ["Python 3", "J2SE 5", "C# 2", "C# 3", "D2", "Perl 5.10", "Scheme R7RS", "Go", "Rust", "REBOL 3", "Clojure", "Haskell Prime", "F#", "Ruby 1.9", "Groovy"] },
+  { year: 2010, languages: ["C# 4", "C++ 0x", "C11", "ADA 2012", "Delphi XE", "Javascript ES5.1", "F# 2.0", "C# 5", "C++ 1y", "Swift", "C11", "Perl 5.20", "ADA 2012", "Delphi XE4", "COBOL 2014", "Elixir", "Elixir 1.0", "Javascript ES6", "Go 1.0", "Self 4.5", "Julia", "Haskell 2010", "F# 3.1.1", "Hack", "PHP 5.6.10" , "Ruby 2.1", "Ruby 2.2"] },
   { year: 2015, languages: ["Rust 1.0", "FORTRAN 2015", "Erlang 17.5"] }
 ]
 
@@ -313,5 +313,9 @@ require 'erb'
   end
 end
 
-template = ERB.new File.new("genealogy.erb").read, nil, "%"
-puts template.result(binding)
+
+# template = ERB.new File.new("genealogy.erb").read, nil, "%"
+# File.open("genealogy.dot", "w+") do |f|
+#   f.write template.result(binding)
+# end
+# system 'dot -Tpng genealogy.dot -o genealogy.png'

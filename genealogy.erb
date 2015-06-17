@@ -1,7 +1,7 @@
-digraph asde91 {
+digraph G {
     ranksep="1.0 equally";
     nodesep="1.0 equally";
-    size="200,100";
+    ratio=auto;
     fontname="Helvetica";
     {
         node [shape=box, fontsize=16];
@@ -19,12 +19,11 @@ digraph asde91 {
     <% @languages_by_year.each do |group| %>
     { rank = same; <%= group[:year] %>; <%= group[:languages].map { |l| "\"#{l}\"" }.join(";") %> }
     <% end %>
-
-	<% @language_versions.each do |pair| %>
-	"<%= pair.first %>" -> "<%= pair.last %>" [style=dotted];
-	<% end %>
+	
 
 	<% @languages.keys.each do |language_name| %>
+	  <% unless @languages[language_name][:influenced].empty? %>
 	"<%= language_name %>" -> { <%= @languages[language_name][:influenced].map { |l| "\"#{l}\"" }.join("; ") %> }
+	  <% end %>
 	<% end %>
 }
