@@ -1,0 +1,318 @@
+Ada (programming language)
+Influenced by
+ALGOL 68, Pascal, C++ (Ada 95), Smalltalk (Ada 95), Java (Ada 2005), Eiffel (Ada 2012)
+Influenced
+C++, Eiffel, PL/SQL, VHDL, Rust, Ruby, Java, Seed7, SQL/PSM
+
+ALGOL
+Influenced
+Most subsequent imperative languages (so-called ALGOL-like languages)
+e.g. Simula, C, CPL, Pascal, Ada
+
+ALGOL 58
+Influenced by
+FORTRAN, IT, Plankalkül,[1]
+
+Sequentielle Formelübersetzung
+Influenced
+Most subsequent imperative languages (Algol-like)
+
+ALGOL 60
+Influenced by
+ALGOL 58
+Influenced
+Most subsequent imperative languages (so-called ALGOL-like languages), e.g. Simula, CPL, Pascal, Ada, C
+
+ALGOL 68
+Influenced by
+ALGOL 60, ALGOL Y
+Influenced
+C[1][2], C++,[3] Bourne shell, Bash, Steelman, Ada, Python,[4] Seed7, Mary, S3
+
+ALGOL W
+Influenced by
+ALGOL 60
+Influenced
+Pascal
+
+APL
+Influenced by
+mathematical notation
+Influenced
+J,[2] K,[3] Mathematica, MATLAB,[4] Nial,[5] PPL, Q, S
+
+AWK
+Influenced by
+C, SNOBOL4, Bourne shell
+Influenced
+Tcl, AMPL, Perl, Korn Shell (ksh93, dtksh, tksh), Lua
+
+B
+Influenced by
+BCPL, PL/I
+Influenced
+C
+
+BCPL
+Influenced by
+CPL
+Influenced
+B, C
+
+C
+Influenced by
+B (BCPL, CPL), ALGOL 68,[3] Assembly, PL/I, FORTRAN
+Influenced
+Numerous: AMPL, AWK, csh, C++, C--, C#, Objective-C, BitC, D, Go, Rust, Java, JavaScript, Limbo, LPC, Perl, PHP, Pike, Processing, Python, Seed7, Verilog (HDL)[4]
+
+C#
+Influenced by
+C++,[3] Eiffel, Java,[3] Modula-3, Object Pascal,[4] ML, Icon, Haskell, Cω, F#[note 1]
+Influenced
+D, Dart,[5] F#, Java,[6] Kotlin, Monkey, Nemerle, Swift,[7] Vala
+
+Caml
+Influenced by
+ML
+Influenced
+F#
+
+COBOL
+Influenced by
+AIMACO, C++,[a] COMTRAN, FACT, FLOW-MATIC, Smalltalk[a]
+Influenced
+CobolScript,[1] PL/I[2]
+
+Common Lisp
+Influenced by
+Lisp, Lisp Machine Lisp, Maclisp, Scheme, Interlisp
+Influenced
+Clojure, Dylan, Emacs Lisp, EuLisp, ISLISP, Julia, Moose, R, SKILL, SubL
+
+Clojure
+Influenced by
+Common Lisp, Erlang, Haskell, ML, Prolog, Scheme, Java, Ruby[2]
+Influenced
+Elixir
+
+CPL
+Influenced by
+ALGOL 60
+Influenced
+BCPL, POP-2
+
+D programming language
+Influenced by
+C, C++, C#, Eiffel, Java, Python, Ruby
+Influenced
+MiniD, DScript, Vala, Qore, Swift,[7] Genie
+
+Dart
+Influenced by
+JavaScript, Smalltalk, Erlang, Strongtalk, and C#[3]
+
+Delphi
+
+Dylan
+Influenced by
+CLOS, ALGOL, Scheme, EuLisp
+Influenced
+Goo, Lasso, Python, Ruby
+
+Eiffel
+Influenced by
+Ada, Simula, Z
+Influenced
+Ada 2012, Albatross, C#, D, Java, Lisaac, Racket, Ruby,[1] Sather, Scala
+
+Erlang
+Influenced by
+Prolog, Smalltalk, PLEX[5]
+Influenced
+F#, Clojure, Rust, Scala, Opa, Reia, Elixir, Dart, Akka
+
+F#
+Influenced by
+ML, OCaml, C#, Python, Haskell,[2] Scala, Erlang
+Influenced
+F*, LiveScript, C#[3]
+
+Factor
+Influenced by
+Joy, Forth, Lisp, Self
+Influenced
+Cat,[1] Concat[2]
+
+Falcon
+Influenced by
+C++, Perl, Lua, Smalltalk, PHP, Lisp, Python, Ruby
+
+Forth
+Influenced by
+Burroughs large systems, Lisp, APL
+Influenced
+Factor, PostScript, RPL, REBOL
+
+Fortran
+Influenced by
+Speedcoding
+Influenced
+ALGOL 58, BASIC, C, CMS-2, PL/I, PACT I, MUMPS and Ratfor
+
+Icon
+Influenced by
+SNOBOL, SL5, ALGOL
+Influenced
+Unicon, Python
+
+Java
+Influenced by
+Ada 83, C++, C#,[3] Eiffel,[4] Generic Java, Mesa,[5] Modula-3,[6] Oberon,[7] Objective-C,[8] UCSD Pascal,[9][10] Smalltalk
+Influenced
+Ada 2005, BeanShell, C#, Clojure, D, ECMAScript, Groovy, J#, JavaScript, Kotlin, PHP, Python, Scala, Seed7, Vala, Hack[11]
+
+Joy
+Influenced by
+Scheme, FP
+Influenced
+Factor, Cat, V, Trith
+
+Julia
+Influenced by
+MATLAB, Scheme, Lisp, C, Fortran, Wolfram Language, Python, Perl, R, Ruby, Lua[9]
+
+Lisp
+Influenced by
+IPL
+Influenced
+CLIPS, CLU, COWSEL, Dylan, Falcon, Forth, Haskell, Io, Ioke, JavaScript, Julia, Logo, Lua, Mathematica, MDL, ML, Nu, OPS5, Perl, POP-2/11, Python, R, Rebol, Ruby, Smalltalk, Tcl
+Dialects
+Arc, AutoLISP, Clojure, Common Lisp, Emacs Lisp, EuLisp, Franz Lisp, Hy, Interlisp, ISLISP, LeLisp, LFE, Maclisp, MDL, Newlisp, NIL, Picolisp, Portable Standard Lisp, Racket, Scheme, SKILL, Spice Lisp, T, XLISP, Zetalisp
+
+Lua
+Influenced by
+C++, CLU, Modula, Scheme, SNOBOL
+Influenced
+Io, GameMonkey, Squirrel, Falcon, MiniD, Julia
+
+ML
+Influenced by
+ISWIM
+Influenced
+Miranda, Haskell, Cyclone, C++, F#, Clojure, Felix, Opa, Erlang, Scala
+
+Oberon
+Influenced by
+Modula-2
+Influenced
+Oberon-2, Zonnon, Go
+
+Modula-2
+Influenced by
+Modula, Mesa, Pascal, Algol-W
+Influenced
+Modula-3, Oberon, Ada, Fortran 90, Lua, Seed7, Zonnon, Modula-GM
+
+Modula-3
+Influenced by
+Modula-2+, Modula-2, Pascal, ALGOL, Oberon
+Influenced
+Java, Python,[1] Caml, C#
+
+Object Pascal
+Influenced by
+Pascal, Smalltalk
+Influenced
+C#, Java
+
+Objective-C
+Influenced by
+C, Smalltalk
+Influenced
+Java, Nu, Objective-J, TOM, Swift[1]
+
+Pascal
+Influenced by
+ALGOL W
+Influenced
+Ada Component Pascal Java[1][2][3] Modula / -2 / -3 Oberon / -2 Object Pascal Oxygene Seed7
+
+Perl
+Influenced by
+AWK, Smalltalk 80, Lisp, C, C++, sed, Unix shell, Pascal
+Influenced
+Python, PHP, Ruby, ECMAScript/Javascript, LPC, Windows PowerShell, Falcon, Perl 6, Qore, Julia
+
+PHP
+Influenced by
+Perl, C, C++, Java, Tcl[1]
+Influenced
+Hack
+
+PL/I
+Influenced by
+COBOL, Fortran, ALGOL
+Influenced
+CMS-2, SP/k, B, REXX, AS/400 Control Language
+
+Prolog
+Influenced by
+PLANNER
+Influenced
+Visual Prolog, Mercury, Oz, Erlang, Strand, KL0, KL1, Datalog, CHR, XSB
+
+Rebol
+Influenced by
+Self, Forth, Lisp, Logo[4]
+Influenced
+JSON,[5] Red
+
+Ruby
+Influenced by
+Ada,[5] C++,[5] CLU,[6] Dylan,[6] Eiffel,[5] Lua, Lisp,[6] Perl,[6] Python,[6] Smalltalk[6]
+Influenced
+Clojure, D,[7] Elixir, Falcon, Fancy,[8] Groovy, Ioke,[9] Julia,[10] Mirah, Nu,[11] potion, Reia, Swift[12]
+
+Scheme
+Influenced by
+Lisp ALGOL MDL
+Influenced
+Clojure Common Lisp Dylan EuLisp Haskell Hop JavaScript Julia Lua R S Racket Ruby Scala
+
+Seed7
+Influenced by
+Pascal, Modula-2, Ada, ALGOL 68, C, C++, Java
+
+Self
+Influenced by
+Smalltalk
+Influenced
+NewtonScript, JavaScript, Io, Cel, Agora, Squeak, Lisaac, Lua, Factor, REBOL
+
+Simula
+Influenced by
+ALGOL 60
+Influenced
+Object-oriented programming languages
+
+Smalltalk
+Influenced by
+Lisp, Simula, Logo, Sketchpad
+Influenced
+Objective-C, Self, Object REXX, Java, PHP 5, Logtalk, Dylan, AppleScript, Lisaac, NewtonScript, Lasso, Python, Ruby, Groovy, Scala, Perl 6, Common Lisp Object System, Falcon, Io, Ioke, Fancy, Dart
+
+Tcl
+Influenced by
+AWK, Lisp
+Influenced
+PowerShell,[2] Tea
+
+Scala
+Influenced by
+Eiffel, Erlang, Haskell,[3] Java, Lisp,[4] Pizza,[5] Standard ML, OCaml, Scheme, Smalltalk, Oz
+Influenced
+Fantom, Ceylon, Lasso, Kotlin, Swift[citation needed]
+
+SNOBOL
+Influenced
+Icon, Lua, SL5

@@ -1,0 +1,430 @@
+digraph asde91 {
+    ranksep="1.0 equally";
+    nodesep="1.0 equally";
+    size="200,100";
+    fontname="Helvetica";
+    {
+        node [shape=box, fontsize=16];
+        /* the time-line graph */
+        1955 -> 1960 -> 1965 -> 1970 -> 1975 -> 1980 -> 1985 ->
+                1990 -> 1995 -> 2000 -> 2005 -> 2010 -> 2015;
+        /* ancestor programs */
+        "Speedcode"; "FORTRAN"; "ALGOL 58"; "COBOL"; "LISP";
+    }
+    { rank = same;
+	    "C# 5"; "C++ 1y"; "Swift"; "C11"; "Perl 5.20"; "ADA 2012"; "Delphi XE4"; "COBOL 2014"; "FORTRAN 2015"; "Rust 1.0"; "Elixir 1.0"; "Erlang 17.5"; "Javascript ES6"; "Go 1.0"; "Self 4.5"; "Julia"; "Haskell 2010"; "F# 3.1.1"
+;
+    };
+    node [shape=box];
+    
+    { rank = same; 1955; "Speedcode";"FORTRAN";"ALGOL 58";"COBOL";"Lisp";"FORTRAN II" }
+    
+    { rank = same; 1960; "CPL";"PL/I";"COBOL 60";"ALGOL 60";"SNOBOL";"APL";"FORTRAN IV" }
+    
+    { rank = same; 1965; "Simula";"Simula 67";"BCPL";"B";"ALGOL W";"FORTRAN 66";"ISWIM";"MUMPS" }
+    
+    { rank = same; 1970; "Modula";"Smalltalk";"C";"Pascal";"ANSI COBOL";"ALGOL 68";"Planner";"Prolog";"CLU";"Forth";"ML";"Hope" }
+    
+    { rank = same; 1975; "C with Classes";"MODULA-2";"AWK";"FORTRAN 77";"Scheme" }
+    
+    { rank = same; 1980; "C++";"Objective-C";"ADA";"ADA 83";"Turbo Pascal";"PIM 2";"ABC";"MODULA-3";"Common Lisp";"occam" }
+    
+    { rank = same; 1985; "Simula 87";"Perl";"Eiffel";"ANSI ADA";"PIM 3";"Object Pascal";"PIM 4";"Oberon";"Erlang";"Self";"Caml";"Miranda";"Clean" }
+    
+    { rank = same; 1990; "Lua";"Python";"GNU Objective-C";"ANSI C";"Perl 5";"Pike";"FORTRAN 90";"Dylan";"Haskell" }
+    
+    { rank = same; 1995; "Java";"C99";"ADA 95";"Delphi";"Delphi 5";"ISO MODULA-2";"FORTRAN 95";"Scheme R5RS";"Javascript";"Javascript ES1";"Javascript ES3";"REBOL";"REBOL 2";"OCaml";"Haskell 98";"Caché";"PHP/FI";"PHP 3";"Ruby";"Ruby 1.2";"Ruby 1.4" }
+    
+    { rank = same; 2000; "Python 2";"Scala";"C#";"D";"Perl 5.6";"Perl 5.8";"COBOL 2002";"Delphi 7";"FORTRAN 2003";"REBOL/Command";"REBOL/View";"REBOL/SDK";"PHP 4";"PHP 5";"Ruby 1.6";"Ruby 1.8";"Factor" }
+    
+    { rank = same; 2005; "Python 3";"J2SE 5";"C# 2";"C# 3";"D2";"Perl 5.10";"Scheme R7RS";"Go";"Rust";"REBOL 3";"Clojure";"Haskell Prime";"F#";"Ruby 1.9" }
+    
+    { rank = same; 2010; "C# 4";"C++ 0x";"C11";"ADA 2012";"Delphi XE";"Javascript ES5.1";"F# 2";"C# 5";"C++ 1y";"Swift";"C11";"Perl 5.20";"ADA 2012";"Delphi XE4";"COBOL 2014";"Elixir";"Elixir 1.0";"Javascript ES6";"Go 1.0";"Self 4.5";"Julia";"Haskell 2010";"F# 3.1.1";"Hack";"PHP 5.6.10";"Ruby 2.1";"Ruby 2.2" }
+    
+    { rank = same; 2015; "Rust 1.0";"FORTRAN 2015";"Erlang 17.5" }
+    
+
+	
+	"FORTRAN" -> "FORTRAN II" [style=dotted];
+	
+	"FORTRAN II" -> "FORTRAN IV" [style=dotted];
+	
+	"FORTRAN IV" -> "FORTRAN 66" [style=dotted];
+	
+	"FORTRAN 66" -> "FORTRAN 77" [style=dotted];
+	
+	"FORTRAN 77" -> "FORTRAN 90" [style=dotted];
+	
+	"FORTRAN 90" -> "FORTRAN 95" [style=dotted];
+	
+	"FORTRAN 95" -> "FORTRAN 2003" [style=dotted];
+	
+	"FORTRAN 2003" -> "FORTRAN 2008" [style=dotted];
+	
+	"FORTRAN 2008" -> "FORTRAN 2015" [style=dotted];
+	
+	"ALGOL 58" -> "ALGOL 60" [style=dotted];
+	
+	"ALGOL 60" -> "ALGOL W" [style=dotted];
+	
+	"ALGOL W" -> "ALGOL 68" [style=dotted];
+	
+	"Modula" -> "MODULA-2" [style=dotted];
+	
+	"MODULA-2" -> "MODULA-3" [style=dotted];
+	
+	"MODULA-3" -> "PIM 2" [style=dotted];
+	
+	"PIM 2" -> "PIM 3" [style=dotted];
+	
+	"PIM 3" -> "PIM 4" [style=dotted];
+	
+	"PIM 4" -> "ISO MODULA-2" [style=dotted];
+	
+	"Pascal" -> "Turbo Pascal" [style=dotted];
+	
+	"Turbo Pascal" -> "Object Pascal" [style=dotted];
+	
+	"Object Pascal" -> "Delphi" [style=dotted];
+	
+	"Delphi" -> "Delphi 5" [style=dotted];
+	
+	"Delphi 5" -> "Delphi 7" [style=dotted];
+	
+	"Delphi 7" -> "Delphi XE" [style=dotted];
+	
+	"Delphi XE" -> "Delphi XE4" [style=dotted];
+	
+	"Oberon" -> "Oberon-2" [style=dotted];
+	
+	"Oberon-2" -> "Oberon-07" [style=dotted];
+	
+	"SNOBOL" -> "SNOBOL4" [style=dotted];
+	
+	"AWK" -> "GNU AWK" [style=dotted];
+	
+	"GNU AWK" -> "New AWK" [style=dotted];
+	
+	"COBOL" -> "COBOL 60" [style=dotted];
+	
+	"COBOL 60" -> "ANSI COBOL" [style=dotted];
+	
+	"ANSI COBOL" -> "COBOL 2002" [style=dotted];
+	
+	"COBOL 2002" -> "COBOL 2014" [style=dotted];
+	
+	"ADA" -> "ADA 83" [style=dotted];
+	
+	"ADA 83" -> "ANSI ADA" [style=dotted];
+	
+	"ANSI ADA" -> "ADA 95" [style=dotted];
+	
+	"ADA 95" -> "ADA 2012" [style=dotted];
+	
+	"B" -> "New B" [style=dotted];
+	
+	"C" -> "ANSI C" [style=dotted];
+	
+	"ANSI C" -> "C99" [style=dotted];
+	
+	"C99" -> "C11" [style=dotted];
+	
+	"D" -> "D2" [style=dotted];
+	
+	"Simula" -> "Simula 67" [style=dotted];
+	
+	"Simula 67" -> "Simula 87" [style=dotted];
+	
+	"Smalltalk" -> "GemStone" [style=dotted];
+	
+	"GemStone" -> "Squeak" [style=dotted];
+	
+	"Squeak" -> "Pharo" [style=dotted];
+	
+	"Pharo" -> "Pharo 4" [style=dotted];
+	
+	"Eiffel" -> "SmartEiffel" [style=dotted];
+	
+	"SmartEiffel" -> "LibertyEiffel" [style=dotted];
+	
+	"MUMPS" -> "ANSI MUMPS" [style=dotted];
+	
+	"occam" -> "occam 2" [style=dotted];
+	
+	"occam 2" -> "occam 2.1" [style=dotted];
+	
+	"Self" -> "Self 4.5" [style=dotted];
+	
+	"Julia" -> "Julia 0.3.9" [style=dotted];
+	
+	"Caml" -> "OCaml" [style=dotted];
+	
+	"Scheme" -> "Scheme R5RS" [style=dotted];
+	
+	"Scheme R5RS" -> "Scheme R7RS" [style=dotted];
+	
+	"Dylan" -> "Dylan 2014.1" [style=dotted];
+	
+	"Clojure" -> "Clojure 1.6" [style=dotted];
+	
+	"Haskell" -> "Haskell 98" [style=dotted];
+	
+	"Haskell 98" -> "Haskell Prime" [style=dotted];
+	
+	"Haskell Prime" -> "Haskell 2010" [style=dotted];
+	
+	"F#" -> "F# 2.0" [style=dotted];
+	
+	"F# 2.0" -> "F# 3.0" [style=dotted];
+	
+	"F# 3.0" -> "F# 3.1.1" [style=dotted];
+	
+	"REBOL" -> "REBOL 2" [style=dotted];
+	
+	"REBOL 2" -> "REBOL/Command" [style=dotted];
+	
+	"REBOL/Command" -> "REBOL/View" [style=dotted];
+	
+	"REBOL/View" -> "REBOL/SDK" [style=dotted];
+	
+	"REBOL/SDK" -> "REBOL 3" [style=dotted];
+	
+	"C++" -> "C++ 0x" [style=dotted];
+	
+	"C++ 0x" -> "C++ 1y" [style=dotted];
+	
+	"C#" -> "C# 2" [style=dotted];
+	
+	"C# 2" -> "C# 3" [style=dotted];
+	
+	"C# 3" -> "C# 4" [style=dotted];
+	
+	"C# 4" -> "C# 5" [style=dotted];
+	
+	"Objective-C" -> "GNU Objective-C" [style=dotted];
+	
+	"GNU Objective-C" -> "Objective-C 2.0" [style=dotted];
+	
+	"Swift" -> "Swift 1.2" [style=dotted];
+	
+	"Erlang" -> "Erlang 17.5" [style=dotted];
+	
+	"Elixir" -> "Elixir 1.0" [style=dotted];
+	
+	"Go" -> "Go 1.0" [style=dotted];
+	
+	"Go 1.0" -> "Go 1.4" [style=dotted];
+	
+	"Javascript" -> "Javascript ES1" [style=dotted];
+	
+	"Javascript ES1" -> "Javascript ES3" [style=dotted];
+	
+	"Javascript ES3" -> "Javascript ES5.1" [style=dotted];
+	
+	"Javascript ES5.1" -> "Javascript ES6" [style=dotted];
+	
+	"Rust" -> "Rust 1.0" [style=dotted];
+	
+	"Scala" -> "Scala 2.0" [style=dotted];
+	
+	"Scala 2.0" -> "Scala 2.11.6" [style=dotted];
+	
+	"Java" -> "J2SE 5" [style=dotted];
+	
+	"Perl" -> "Perl 5" [style=dotted];
+	
+	"Perl 5" -> "Perl 5.6" [style=dotted];
+	
+	"Perl 5.6" -> "Perl 5.8" [style=dotted];
+	
+	"Perl 5.8" -> "Perl 5.10" [style=dotted];
+	
+	"Perl 5.10" -> "Perl 5.20" [style=dotted];
+	
+	"Python" -> "Python 2" [style=dotted];
+	
+	"Python 2" -> "Python 3" [style=dotted];
+	
+	"PHP/FI" -> "PHP 3" [style=dotted];
+	
+	"PHP 3" -> "PHP 4" [style=dotted];
+	
+	"PHP 4" -> "PHP 5" [style=dotted];
+	
+	"PHP 5" -> "PHP 5.6.10" [style=dotted];
+	
+	"Ruby" -> "Ruby 1.2" [style=dotted];
+	
+	"Ruby 1.2" -> "Ruby 1.4" [style=dotted];
+	
+	"Ruby 1.4" -> "Ruby 1.6" [style=dotted];
+	
+	"Ruby 1.6" -> "Ruby 1.8" [style=dotted];
+	
+	"Ruby 1.8" -> "Ruby 1.9" [style=dotted];
+	
+	"Ruby 1.9" -> "Ruby 2.1" [style=dotted];
+	
+	"Ruby 2.1" -> "Ruby 2.2" [style=dotted];
+	
+	"Groovy" -> "Groovy 2.0" [style=dotted];
+	
+	"Groovy 2.0" -> "Groovy 2.4.3" [style=dotted];
+	
+
+	
+	"Speedcode" -> { "FORTRAN"; "ALGOL 58"; "C"; "PL/I"; "MUMPS" }
+	
+	"FORTRAN" -> { "ALGOL 58"; "C"; "PL/I"; "MUMPS"; "Julia" }
+	
+	"ALGOL 58" -> { "C"; "CPL"; "Pascal"; "ADA" }
+	
+	"ALGOL 60" -> { "Simula"; "BCPL"; "CLU" }
+	
+	"ALGOL 68" -> { "C"; "C++"; "ADA"; "Python" }
+	
+	"ALGOL W" -> { "Pascal" }
+	
+	"Modula" -> { "Pascal"; "Lua"; "Go" }
+	
+	"MODULA-2" -> { "Oberon"; "ADA"; "FORTRAN 90"; "Lua" }
+	
+	"MODULA-3" -> { "Java"; "Python"; "Caml"; "C#" }
+	
+	"Pascal" -> { "ADA"; "Java"; "MODULA-2"; "MODULA-3"; "Oberon"; "Object Pascal"; "Go" }
+	
+	"Object Pascal" -> { "C#"; "Java" }
+	
+	"Oberon" -> { "Go" }
+	
+	"Mesa" -> { "Java"; "MODULA-2" }
+	
+	"ABC" -> { "Python" }
+	
+	"SNOBOL" -> { "Lua" }
+	
+	"APL" -> {  }
+	
+	"Planner" -> {  }
+	
+	"Prolog" -> { "Erlang" }
+	
+	"CLU" -> { "Lua"; "ADA"; "Ruby"; "Swift" }
+	
+	"AWK" -> { "Javascript"; "Perl"; "Lua" }
+	
+	"FLOW-MATIC" -> { "COBOL" }
+	
+	"COBOL" -> {  }
+	
+	"ADA" -> { "C++"; "Eiffel"; "Rust"; "Ruby"; "Java" }
+	
+	"CPL" -> { "BCPL" }
+	
+	"PL/I" -> {  }
+	
+	"BCPL" -> { "B"; "C" }
+	
+	"B" -> { "C" }
+	
+	"C" -> { "AWK"; "C++"; "C#"; "Objective-C"; "D"; "Go"; "Rust"; "Java"; "Javascript"; "Perl"; "Python"; "PHP/FI" }
+	
+	"D" -> {  }
+	
+	"Simula" -> { "CLU"; "Smalltalk"; "C with Classes" }
+	
+	"Smalltalk" -> { "Groovy"; "Objective-C"; "Self"; "Java"; "PHP 5"; "Python"; "Ruby"; "Scala"; "Common Lisp" }
+	
+	"Eiffel" -> { "ADA 2012"; "C#"; "D"; "Java"; "Ruby"; "Scala" }
+	
+	"Pike" -> { "Prolog" }
+	
+	"ISWIM" -> { "Miranda"; "ML"; "Haskell"; "Clean" }
+	
+	"MUMPS" -> { "Caché" }
+	
+	"Hope" -> { "Standard ML" }
+	
+	"occam" -> { "Go" }
+	
+	"Miranda" -> { "Haskell"; "Clean" }
+	
+	"Clean" -> { "Miranda"; "Haskell" }
+	
+	"Caché" -> {  }
+	
+	"Forth" -> { "REBOL"; "Factor" }
+	
+	"Self" -> { "Javascript"; "Lua"; "REBOL"; "Factor" }
+	
+	"Julia" -> {  }
+	
+	"ML" -> { "Haskell"; "C++"; "F#"; "Clojure"; "Erlang"; "Scala"; "Standard ML" }
+	
+	"Standard ML" -> { "OCaml"; "Rust" }
+	
+	"Caml" -> { "F#" }
+	
+	"OCaml" -> { "Scala"; "F#"; "Rust" }
+	
+	"Lisp" -> { "Scheme"; "CLU"; "Forth"; "Haskell"; "Lua"; "ML"; "Python"; "REBOL"; "Ruby"; "Smalltalk"; "Factor" }
+	
+	"Common Lisp" -> { "Clojure"; "Julia"; "Dylan" }
+	
+	"Scheme" -> { "Lua"; "Clojure"; "Haskell"; "Javascript"; "Ruby"; "Scala" }
+	
+	"Dylan" -> { "Python"; "Ruby" }
+	
+	"Clojure" -> { "Elixir" }
+	
+	"Haskell" -> { "C#"; "F#"; "Clojure"; "Python"; "Scala"; "Swift" }
+	
+	"F#" -> {  }
+	
+	"REBOL" -> {  }
+	
+	"C with Classes" -> { "C++" }
+	
+	"C++" -> { "PHP/FI"; "Perl"; "Lua"; "Pike"; "ADA 95"; "Java"; "D"; "C99" }
+	
+	"C#" -> { "Hack"; "D"; "Swift" }
+	
+	"Objective-C" -> { "Groovy"; "Java"; "Swift" }
+	
+	"Swift" -> {  }
+	
+	"Erlang" -> { "F#"; "Clojure"; "Rust"; "Scala"; "Elixir" }
+	
+	"Elixir" -> {  }
+	
+	"Go" -> {  }
+	
+	"Javascript" -> {  }
+	
+	"Rust" -> { "Swift" }
+	
+	"Lua" -> { "Julia"; "Javascript" }
+	
+	"Scala" -> {  }
+	
+	"Factor" -> {  }
+	
+	"Java" -> { "ADA 2005"; "C#"; "Clojure"; "D"; "Javascript"; "Scala"; "PHP/FI"; "Groovy"; "Hack" }
+	
+	"Perl" -> { "Groovy"; "Python"; "PHP/FI"; "Javascript"; "Julia" }
+	
+	"Python" -> { "D"; "F#"; "Go"; "Groovy"; "Javascript"; "Julia"; "Ruby"; "Swift" }
+	
+	"Python 2" -> { "Groovy" }
+	
+	"PHP/FI" -> {  }
+	
+	"PHP 5" -> { "Hack" }
+	
+	"Hack" -> {  }
+	
+	"Ruby" -> { "Groovy"; "Clojure"; "Elixir"; "Julia"; "Swift" }
+	
+	"Groovy" -> {  }
+	
+}
