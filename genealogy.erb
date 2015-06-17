@@ -2,28 +2,28 @@ digraph G {
     ranksep="1.0 equally";
     nodesep="1.0 equally";
     ratio=auto;
-    fontname="Helvetica";
+    concentrate=true;
     {
         node [shape=box, fontsize=16];
         /* the time-line graph */
-        1955 -> 1960 -> 1965 -> 1970 -> 1975 -> 1980 -> 1985 ->
-                1990 -> 1995 -> 2000 -> 2005 -> 2010 -> 2015;
+		<%= @main_ranks.join(" -> ") %>
         /* ancestor programs */
-        "Speedcode"; "FORTRAN"; "ALGOL 58"; "COBOL"; "LISP";
+        <%= @ancestors_str %>
     }
     { rank = same;
-	    <%= @recent_languages.map { |l| "\"#{l}\"" }.join("; ") %>
+	    <%= escape_list(@recent_languages_filtered) %>
 ;
     };
     node [shape=box];
-    <% @languages_by_year.each do |group| %>
-    { rank = same; <%= group[:year] %>; <%= group[:languages].map { |l| "\"#{l}\"" }.join(";") %> }
+    <% @main_ranks_str.each do |group| %>
+    { rank = same; <%= group[:year] %>; <%= group[:languages] %> }
     <% end %>
 	
+	<% @valid_versions.each do |key, value| %>
+	subgraph "<%= key %>" { "<%= key %>" -> <%= value[:versions] %> [style=dotted] }
+	<% end %>
 
-	<% @languages.keys.each do |language_name| %>
-	  <% unless @languages[language_name][:influenced].empty? %>
-	"<%= language_name %>" -> { <%= @languages[language_name][:influenced].map { |l| "\"#{l}\"" }.join("; ") %> }
-	  <% end %>
+	<% @valid_influenced.each do |key, value| %>
+	"<%= key %>" -> { <%= value[:influenced] %> }
 	<% end %>
 }
