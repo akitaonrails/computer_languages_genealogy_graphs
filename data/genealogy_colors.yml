@@ -1,0 +1,31 @@
+---
+Swift:
+  :fillcolor: orange
+  :fontcolor: black
+Go:
+  :fillcolor: black
+  :fontcolor: white
+Javascript:
+  :fillcolor: grey
+  :fontcolor: white
+Java:
+  :fillcolor: purple
+  :fontcolor: white
+Python:
+  :fillcolor: green
+  :fontcolor: black
+PHP/FI:
+  :fillcolor: blue
+  :fontcolor: white
+Ruby:
+  :fillcolor: red
+  :fontcolor: white
+Elixir:
+  :fillcolor: lightblue
+  :fontcolor: black
+Rust:
+  :fillcolor: lightgrey
+  :fontcolor: black
+Haskell:
+  :fillcolor: brown
+  :fontcolor: white
