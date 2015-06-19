@@ -6,24 +6,28 @@ digraph G {
     {
         node [shape=box, fontsize=16];
         /* the time-line graph */
-		<%= @main_ranks.join(" -> ") %>
+        <%= @main_ranks_str.map { |g| g[:year] }.join(" -> ") %>
         /* ancestor programs */
         <%= @ancestors_str %>
     }
-    { rank = same;
-	    <%= escape_list(@recent_languages_filtered) %>
-;
-    };
+
     node [shape=box];
     <% @main_ranks_str.each do |group| %>
-    { rank = same; <%= group[:year] %>; <%= group[:languages] %> }
+    { rank = same; <%= group[:year] %>; <%= group[:formatted_languages] %> }
     <% end %>
-	
-	<% @valid_versions.each do |key, value| %>
-	subgraph "<%= key %>" { "<%= key %>" -> <%= value[:versions] %> [style=dotted] }
+
+	<% @valid_versions.each_with_index do |(key, value), index| %>
+	subgraph cluster<%=index%> {
+        <% if value[:highlight] %>
+        node [style=filled,color=white];
+        style=filled;
+        color=<%= value[:highlight] %>;
+        <% end %>
+        "<%= key %>" -> <%= value[:formatted_versions] %> [style=dotted]
+    }
 	<% end %>
 
 	<% @valid_influenced.each do |key, value| %>
-	"<%= key %>" -> { <%= value[:influenced] %> }
+	"<%= key %>" -> { <%= value[:formatted_influenced] %> }
 	<% end %>
 }
