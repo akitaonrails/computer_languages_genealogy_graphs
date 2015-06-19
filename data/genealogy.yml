@@ -493,6 +493,8 @@ ISWIM:
   - Clean
 MUMPS:
   :year: 1966
+  :author: Neil Pappalardo
+  :wikipedia: https://en.wikipedia.org/wiki/MUMPS
   :summary:
   - ACID (Atomic, Consistent, Isolated, and Durable) transaction processing
   - built-in database
