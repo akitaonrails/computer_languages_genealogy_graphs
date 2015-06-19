@@ -1,0 +1,937 @@
+digraph G {
+    ranksep="1.0 equally";
+    nodesep="1.0 equally";
+    ratio=auto;
+    concentrate=true;
+    compound=true;
+    {
+        node [shape=box, fontsize=16];
+        /* the time-line graph */
+        1955 -> 1960 -> 1965 -> 1970 -> 1975 -> 1980 -> 1985 -> 1990 -> 1995 -> 2000 -> 2005 -> 2010 -> 2015
+        /* ancestor programs */
+        
+    }
+
+    node [shape=box];
+    
+    { rank = same; 1955; "Speedcode" }
+    
+    { rank = same; 1960; "FORTRAN"; "ALGOL 58"; "Lisp"; "FLOW-MATIC"; "COBOL" }
+    
+    { rank = same; 1965; "Modula"; "SNOBOL"; "APL"; "PL/I"; "CPL" }
+    
+    { rank = same; 1970; "BCPL"; "MUMPS"; "B"; "Simula"; "ISWIM" }
+    
+    { rank = same; 1975; "Pascal"; "Mesa"; "Planner"; "Hope"; "Forth"; "Prolog"; "C"; "Smalltalk"; "CLU"; "ML" }
+    
+    { rank = same; 1980; "AWK"; "Scheme"; "C with Classes" }
+    
+    { rank = same; 1985; "ABC"; "ADA"; "occam"; "C++"; "Objective-C"; "Common Lisp" }
+    
+    { rank = same; 1990; "Oberon"; "Eiffel"; "Erlang"; "Miranda"; "Caml"; "Clean"; "Self"; "Perl" }
+    
+    { rank = same; 1995; "Standard ML"; "Haskell"; "Dylan"; "Lua"; "Python" }
+    
+    { rank = same; 2000; "Caché"; "Ruby"; "REBOL"; "Javascript"; "Java"; "PHP/FI" }
+    
+    { rank = same; 2005; "D"; "C#"; "Scala"; "Factor" }
+    
+    { rank = same; 2010; "Clojure"; "Go"; "Groovy"; "F#" }
+    
+    { rank = same; 2015; "Julia"; "Elixir"; "Swift"; "Hack"; "Rust" }
+    
+
+	
+
+    
+
+    
+        
+        
+            
+                "Speedcode" -> "FORTRAN" [style=dotted]
+            
+        
+            
+                "Speedcode" -> "ALGOL 58" [style=dotted]
+            
+        
+            
+                "Speedcode" -> "C" [style=dotted]
+            
+        
+            
+                "Speedcode" -> "PL/I" [style=dotted]
+            
+        
+            
+                "Speedcode" -> "MUMPS" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "FORTRAN" -> "ALGOL 58" [style=dotted]
+            
+        
+            
+                "FORTRAN" -> "C" [style=dotted]
+            
+        
+            
+                "FORTRAN" -> "PL/I" [style=dotted]
+            
+        
+            
+                "FORTRAN" -> "MUMPS" [style=dotted]
+            
+        
+            
+                "FORTRAN" -> "Julia" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "ALGOL 58" -> "C" [style=dotted]
+            
+        
+            
+                "ALGOL 58" -> "CPL" [style=dotted]
+            
+        
+            
+                "ALGOL 58" -> "Pascal" [style=dotted]
+            
+        
+            
+                "ALGOL 58" -> "ADA" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Modula" -> "Pascal" [style=dotted]
+            
+        
+            
+                "Modula" -> "Lua" [style=dotted]
+            
+        
+            
+                "Modula" -> "Go" [color=black]
+            
+        
+    
+        
+        
+            
+                "Pascal" -> "ADA" [style=dotted]
+            
+        
+            
+                "Pascal" -> "Java" [color=purple]
+            
+        
+            
+                "Pascal" -> "MODULA-2" [style=dotted]
+            
+        
+            
+                "Pascal" -> "MODULA-3" [style=dotted]
+            
+        
+            
+                "Pascal" -> "Oberon" [style=dotted]
+            
+        
+            
+                "Pascal" -> "Object Pascal" [style=dotted]
+            
+        
+            
+                "Pascal" -> "Go" [color=black]
+            
+        
+    
+        
+        
+            
+                "Oberon" -> "Go" [color=black]
+            
+        
+    
+        
+        
+            
+                "Mesa" -> "Java" [color=purple]
+            
+        
+            
+                "Mesa" -> "MODULA-2" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "ABC" -> "Python" [color=green]
+            
+        
+    
+        
+        
+            
+                "SNOBOL" -> "Lua" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Planner" -> "Prolog" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Prolog" -> "Erlang" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "CLU" -> "Lua" [style=dotted]
+            
+        
+            
+                "CLU" -> "ADA" [style=dotted]
+            
+        
+            
+                "CLU" -> "Ruby" [color=red]
+            
+        
+            
+                "CLU" -> "Swift" [color=orange]
+            
+        
+    
+        
+        
+            
+                "AWK" -> "Javascript" [color=grey]
+            
+        
+            
+                "AWK" -> "Perl" [style=dotted]
+            
+        
+            
+                "AWK" -> "Lua" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "FLOW-MATIC" -> "COBOL" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "ADA" -> "C++" [style=dotted]
+            
+        
+            
+                "ADA" -> "Eiffel" [style=dotted]
+            
+        
+            
+                "ADA" -> "Rust" [color=lightgrey]
+            
+        
+            
+                "ADA" -> "Ruby" [color=red]
+            
+        
+            
+                "ADA" -> "Java" [color=purple]
+            
+        
+    
+        
+        
+            
+                "CPL" -> "BCPL" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "BCPL" -> "B" [style=dotted]
+            
+        
+            
+                "BCPL" -> "C" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "B" -> "C" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "C" -> "AWK" [style=dotted]
+            
+        
+            
+                "C" -> "C++" [style=dotted]
+            
+        
+            
+                "C" -> "C#" [style=dotted]
+            
+        
+            
+                "C" -> "Objective-C" [style=dotted]
+            
+        
+            
+                "C" -> "D" [style=dotted]
+            
+        
+            
+                "C" -> "Go" [color=black]
+            
+        
+            
+                "C" -> "Rust" [color=lightgrey]
+            
+        
+            
+                "C" -> "Java" [color=purple]
+            
+        
+            
+                "C" -> "Javascript" [color=grey]
+            
+        
+            
+                "C" -> "Perl" [style=dotted]
+            
+        
+            
+                "C" -> "Python" [color=green]
+            
+        
+            
+                "C" -> "PHP/FI" [color=blue]
+            
+        
+    
+        
+        
+            
+                "Simula" -> "CLU" [style=dotted]
+            
+        
+            
+                "Simula" -> "Smalltalk" [style=dotted]
+            
+        
+            
+                "Simula" -> "C with Classes" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Smalltalk" -> "Groovy" [style=dotted]
+            
+        
+            
+                "Smalltalk" -> "Objective-C" [style=dotted]
+            
+        
+            
+                "Smalltalk" -> "Self" [style=dotted]
+            
+        
+            
+                "Smalltalk" -> "Java" [color=purple]
+            
+        
+            
+                "Smalltalk" -> "PHP 5" [color=blue]
+            
+        
+            
+                "Smalltalk" -> "Python" [color=green]
+            
+        
+            
+                "Smalltalk" -> "Ruby" [color=red]
+            
+        
+            
+                "Smalltalk" -> "Scala" [style=dotted]
+            
+        
+            
+                "Smalltalk" -> "Common Lisp" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Eiffel" -> "ADA 2012" [style=dotted]
+            
+        
+            
+                "Eiffel" -> "C#" [style=dotted]
+            
+        
+            
+                "Eiffel" -> "D" [style=dotted]
+            
+        
+            
+                "Eiffel" -> "Java" [color=purple]
+            
+        
+            
+                "Eiffel" -> "Ruby" [color=red]
+            
+        
+            
+                "Eiffel" -> "Scala" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "ISWIM" -> "Miranda" [style=dotted]
+            
+        
+            
+                "ISWIM" -> "ML" [style=dotted]
+            
+        
+            
+                "ISWIM" -> "Haskell" [color=brown]
+            
+        
+            
+                "ISWIM" -> "Clean" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "MUMPS" -> "Caché" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Hope" -> "Standard ML" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "occam" -> "Go" [color=black]
+            
+        
+    
+        
+        
+            
+                "Miranda" -> "Haskell" [color=brown]
+            
+        
+            
+                "Miranda" -> "Clean" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Clean" -> "Haskell" [color=brown]
+            
+        
+    
+        
+        
+            
+                "Forth" -> "REBOL" [style=dotted]
+            
+        
+            
+                "Forth" -> "Factor" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Self" -> "Javascript" [color=grey]
+            
+        
+            
+                "Self" -> "Lua" [style=dotted]
+            
+        
+            
+                "Self" -> "REBOL" [style=dotted]
+            
+        
+            
+                "Self" -> "Factor" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "ML" -> "Haskell" [color=brown]
+            
+        
+            
+                "ML" -> "C++" [style=dotted]
+            
+        
+            
+                "ML" -> "F#" [style=dotted]
+            
+        
+            
+                "ML" -> "Clojure" [style=dotted]
+            
+        
+            
+                "ML" -> "Erlang" [style=dotted]
+            
+        
+            
+                "ML" -> "Scala" [style=dotted]
+            
+        
+            
+                "ML" -> "Standard ML" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Standard ML" -> "OCaml" [style=dotted]
+            
+        
+            
+                "Standard ML" -> "Rust" [color=lightgrey]
+            
+        
+    
+        
+        
+            
+                "Caml" -> "F#" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Lisp" -> "Scheme" [style=dotted]
+            
+        
+            
+                "Lisp" -> "CLU" [style=dotted]
+            
+        
+            
+                "Lisp" -> "Forth" [style=dotted]
+            
+        
+            
+                "Lisp" -> "Haskell" [color=brown]
+            
+        
+            
+                "Lisp" -> "Lua" [style=dotted]
+            
+        
+            
+                "Lisp" -> "ML" [style=dotted]
+            
+        
+            
+                "Lisp" -> "Python" [color=green]
+            
+        
+            
+                "Lisp" -> "REBOL" [style=dotted]
+            
+        
+            
+                "Lisp" -> "Ruby" [color=red]
+            
+        
+            
+                "Lisp" -> "Smalltalk" [style=dotted]
+            
+        
+            
+                "Lisp" -> "Factor" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Common Lisp" -> "Clojure" [style=dotted]
+            
+        
+            
+                "Common Lisp" -> "Julia" [style=dotted]
+            
+        
+            
+                "Common Lisp" -> "Dylan" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Scheme" -> "Lua" [style=dotted]
+            
+        
+            
+                "Scheme" -> "Clojure" [style=dotted]
+            
+        
+            
+                "Scheme" -> "Haskell" [color=brown]
+            
+        
+            
+                "Scheme" -> "Javascript" [color=grey]
+            
+        
+            
+                "Scheme" -> "Ruby" [color=red]
+            
+        
+            
+                "Scheme" -> "Scala" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Dylan" -> "Python" [color=green]
+            
+        
+            
+                "Dylan" -> "Ruby" [color=red]
+            
+        
+    
+        
+        
+            
+                "Clojure" -> "Elixir" [color=lightblue]
+            
+        
+    
+        
+        "Haskell" [shape=circle, style=filled, fontcolor=white, fillcolor=brown]
+        
+        
+            
+                "Haskell" -> "C#" [style=dotted]
+            
+        
+            
+                "Haskell" -> "F#" [style=dotted]
+            
+        
+            
+                "Haskell" -> "Clojure" [style=dotted]
+            
+        
+            
+                "Haskell" -> "Python" [color=green]
+            
+        
+            
+                "Haskell" -> "Scala" [style=dotted]
+            
+        
+            
+                "Haskell" -> "Swift" [color=orange]
+            
+        
+    
+        
+        
+            
+                "C with Classes" -> "C++" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "C++" -> "PHP/FI" [color=blue]
+            
+        
+            
+                "C++" -> "Perl" [style=dotted]
+            
+        
+            
+                "C++" -> "Lua" [style=dotted]
+            
+        
+            
+                "C++" -> "ADA 95" [style=dotted]
+            
+        
+            
+                "C++" -> "Java" [color=purple]
+            
+        
+            
+                "C++" -> "D" [style=dotted]
+            
+        
+            
+                "C++" -> "C99" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "C#" -> "Hack" [style=dotted]
+            
+        
+            
+                "C#" -> "D" [style=dotted]
+            
+        
+            
+                "C#" -> "Swift" [color=orange]
+            
+        
+    
+        
+        
+            
+                "Objective-C" -> "Groovy" [style=dotted]
+            
+        
+            
+                "Objective-C" -> "Java" [color=purple]
+            
+        
+            
+                "Objective-C" -> "Swift" [color=orange]
+            
+        
+    
+        
+        
+            
+                "Erlang" -> "F#" [style=dotted]
+            
+        
+            
+                "Erlang" -> "Clojure" [style=dotted]
+            
+        
+            
+                "Erlang" -> "Rust" [color=lightgrey]
+            
+        
+            
+                "Erlang" -> "Scala" [style=dotted]
+            
+        
+            
+                "Erlang" -> "Elixir" [color=lightblue]
+            
+        
+    
+        
+        "Rust" [shape=circle, style=filled, fontcolor=black, fillcolor=lightgrey]
+        
+        
+            
+                "Rust" -> "Swift" [color=orange]
+            
+        
+    
+        
+        
+            
+                "Lua" -> "Julia" [style=dotted]
+            
+        
+            
+                "Lua" -> "Javascript" [color=grey]
+            
+        
+    
+        
+        "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+        
+            
+                "Java" -> "ADA 2005" [style=dotted]
+            
+        
+            
+                "Java" -> "C#" [style=dotted]
+            
+        
+            
+                "Java" -> "Clojure" [style=dotted]
+            
+        
+            
+                "Java" -> "D" [style=dotted]
+            
+        
+            
+                "Java" -> "Javascript" [color=grey]
+            
+        
+            
+                "Java" -> "Scala" [style=dotted]
+            
+        
+            
+                "Java" -> "PHP/FI" [color=blue]
+            
+        
+            
+                "Java" -> "Groovy" [style=dotted]
+            
+        
+            
+                "Java" -> "Hack" [style=dotted]
+            
+        
+    
+        
+        
+            
+                "Perl" -> "Groovy" [style=dotted]
+            
+        
+            
+                "Perl" -> "Python" [color=green]
+            
+        
+            
+                "Perl" -> "PHP/FI" [color=blue]
+            
+        
+            
+                "Perl" -> "Javascript" [color=grey]
+            
+        
+            
+                "Perl" -> "Julia" [style=dotted]
+            
+        
+    
+        
+        "Python" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+        
+        
+            
+                "Python" -> "D" [style=dotted]
+            
+        
+            
+                "Python" -> "F#" [style=dotted]
+            
+        
+            
+                "Python" -> "Go" [color=black]
+            
+        
+            
+                "Python" -> "Groovy" [style=dotted]
+            
+        
+            
+                "Python" -> "Javascript" [color=grey]
+            
+        
+            
+                "Python" -> "Julia" [style=dotted]
+            
+        
+            
+                "Python" -> "Ruby" [color=red]
+            
+        
+            
+                "Python" -> "Swift" [color=orange]
+            
+        
+    
+        
+        "Ruby" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+        
+            
+                "Ruby" -> "Groovy" [style=dotted]
+            
+        
+            
+                "Ruby" -> "Clojure" [style=dotted]
+            
+        
+            
+                "Ruby" -> "Elixir" [color=lightblue]
+            
+        
+            
+                "Ruby" -> "Julia" [style=dotted]
+            
+        
+            
+                "Ruby" -> "Swift" [color=orange]
+            
+        
+    
+}

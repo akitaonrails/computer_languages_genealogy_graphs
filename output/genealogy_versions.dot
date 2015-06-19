@@ -1,0 +1,367 @@
+digraph G {
+    ranksep="1.0 equally";
+    nodesep="1.0 equally";
+    ratio=auto;
+    concentrate=true;
+    compound=true;
+    {
+        node [shape=box, fontsize=16];
+        /* the time-line graph */
+        1955 -> 1960 -> 1965 -> 1970 -> 1975 -> 1980 -> 1985 -> 1990 -> 1995 -> 2000 -> 2005 -> 2010 -> 2015
+        /* ancestor programs */
+        
+    }
+
+    node [shape=box];
+    
+    { rank = same; 1955; "Speedcode" }
+    
+    { rank = same; 1960; "FORTRAN"; "FORTRAN II"; "ALGOL 58"; "Lisp"; "FLOW-MATIC"; "COBOL" }
+    
+    { rank = same; 1965; "FORTRAN IV"; "ALGOL 60"; "Modula"; "COBOL 60"; "SNOBOL"; "APL"; "PL/I"; "CPL" }
+    
+    { rank = same; 1970; "FORTRAN 66"; "ALGOL W"; "BCPL"; "MUMPS"; "SNOBOL4"; "Simula 67"; "B"; "Simula"; "ISWIM" }
+    
+    { rank = same; 1975; "ALGOL 68"; "ML"; "Pascal"; "Mesa"; "Planner"; "Hope"; "Forth"; "Prolog"; "New B"; "C"; "Smalltalk"; "CLU"; "ANSI COBOL" }
+    
+    { rank = same; 1980; "FORTRAN 77"; "AWK"; "ANSI MUMPS"; "MODULA-2"; "Scheme"; "C with Classes" }
+    
+    { rank = same; 1985; "MODULA-3"; "PIM 2"; "ADA 83"; "occam"; "C++"; "Objective-C"; "Turbo Pascal"; "ABC"; "ADA"; "Common Lisp" }
+    
+    { rank = same; 1990; "PIM 3"; "Miranda"; "Caml"; "PIM 4"; "GNU AWK"; "Object Pascal"; "Oberon"; "GemStone"; "Eiffel"; "Erlang"; "ANSI ADA"; "Simula 87"; "occam 2"; "Clean"; "Self"; "Perl" }
+    
+    { rank = same; 1995; "FORTRAN 90"; "Dylan"; "GNU Objective-C"; "Oberon-2"; "Python"; "New AWK"; "Lua"; "Perl 5"; "ANSI C"; "Standard ML"; "Haskell"; "SmartEiffel"; "occam 2.1" }
+    
+    { rank = same; 2000; "FORTRAN 95"; "Haskell 98"; "REBOL"; "Javascript ES1"; "PHP 3"; "ISO MODULA-2"; "Squeak"; "Caché"; "OCaml"; "Ruby"; "Delphi"; "ADA 95"; "Javascript"; "Java"; "PHP/FI"; "Delphi 5"; "C99"; "REBOL 2"; "Javascript ES3"; "Ruby 1.4"; "Scheme R5RS"; "Ruby 1.2" }
+    
+    { rank = same; 2005; "FORTRAN 2003"; "PHP 5"; "Delphi 7"; "REBOL/SDK"; "Scala"; "Factor"; "Ruby 1.8"; "COBOL 2002"; "REBOL/View"; "Perl 5.8"; "D"; "REBOL/Command"; "C#"; "Perl 5.6"; "Python 2"; "PHP 4"; "Ruby 1.6" }
+    
+    { rank = same; 2010; "Oberon-07"; "D2"; "Scheme R7RS"; "Clojure"; "C# 3"; "Go"; "Perl 5.10"; "Ruby 1.9"; "Groovy"; "Pharo"; "REBOL 3"; "Python 3"; "Haskell Prime"; "Objective-C 2.0"; "Scala 2.0"; "F#"; "C# 2"; "J2SE 5" }
+    
+    { rank = same; 2015; "FORTRAN 2008"; "Haskell 2010"; "F# 2.0"; "C# 4"; "Delphi XE"; "C11"; "C++ 0x"; "Javascript ES5.1"; "Rust"; "Delphi XE4"; "LibertyEiffel"; "C# 5"; "Ruby 2.1"; "COBOL 2014"; "Self 4.5"; "Dylan 2014.1"; "Clojure 1.6"; "F# 3.1.1"; "C++ 1y"; "Swift"; "Elixir 1.0"; "Javascript ES6"; "Perl 5.20"; "Hack"; "Ruby 2.2"; "ADA 2012"; "Julia"; "F# 3.0"; "Elixir"; "Go 1.0"; "Groovy 2.0" }
+    
+
+	
+	subgraph cluster0 {
+        "FORTRAN" -> "FORTRAN II" -> "FORTRAN IV" -> "FORTRAN 66" -> "FORTRAN 77" -> "FORTRAN 90" -> "FORTRAN 95" -> "FORTRAN 2003" -> "FORTRAN 2008" -> "FORTRAN 2015" [style=dotted]
+    }
+	
+	subgraph cluster1 {
+        "ALGOL 58" -> "ALGOL 60" -> "ALGOL W" -> "ALGOL 68" [style=dotted]
+    }
+	
+	subgraph cluster2 {
+        "Modula" -> "MODULA-2" -> "MODULA-3" -> "PIM 2" -> "PIM 3" -> "PIM 4" -> "ISO MODULA-2" [style=dotted]
+    }
+	
+	subgraph cluster3 {
+        "Pascal" -> "Turbo Pascal" -> "Object Pascal" -> "Delphi" -> "Delphi 5" -> "Delphi 7" -> "Delphi XE" -> "Delphi XE4" [style=dotted]
+    }
+	
+	subgraph cluster4 {
+        "Oberon" -> "Oberon-2" -> "Oberon-07" [style=dotted]
+    }
+	
+	subgraph cluster5 {
+        "SNOBOL" -> "SNOBOL4" [style=dotted]
+    }
+	
+	subgraph cluster6 {
+        "AWK" -> "GNU AWK" -> "New AWK" [style=dotted]
+    }
+	
+	subgraph cluster7 {
+        "COBOL" -> "COBOL 60" -> "ANSI COBOL" -> "COBOL 2002" -> "COBOL 2014" [style=dotted]
+    }
+	
+	subgraph cluster8 {
+        "ADA" -> "ADA 83" -> "ANSI ADA" -> "ADA 95" -> "ADA 2012" [style=dotted]
+    }
+	
+	subgraph cluster9 {
+        "B" -> "New B" [style=dotted]
+    }
+	
+	subgraph cluster10 {
+        "C" -> "ANSI C" -> "C99" -> "C11" [style=dotted]
+    }
+	
+	subgraph cluster11 {
+        "D" -> "D2" [style=dotted]
+    }
+	
+	subgraph cluster12 {
+        "Simula" -> "Simula 67" -> "Simula 87" [style=dotted]
+    }
+	
+	subgraph cluster13 {
+        "Smalltalk" -> "GemStone" -> "Squeak" -> "Pharo" -> "Pharo 4" [style=dotted]
+    }
+	
+	subgraph cluster14 {
+        "Eiffel" -> "SmartEiffel" -> "LibertyEiffel" [style=dotted]
+    }
+	
+	subgraph cluster15 {
+        "MUMPS" -> "ANSI MUMPS" [style=dotted]
+    }
+	
+	subgraph cluster16 {
+        "occam" -> "occam 2" -> "occam 2.1" [style=dotted]
+    }
+	
+	subgraph cluster17 {
+        "Self" -> "Self 4.5" [style=dotted]
+    }
+	
+	subgraph cluster18 {
+        "Julia" -> "Julia 0.3.9" [style=dotted]
+    }
+	
+	subgraph cluster19 {
+        "Caml" -> "OCaml" [style=dotted]
+    }
+	
+	subgraph cluster20 {
+        "Scheme" -> "Scheme R5RS" -> "Scheme R7RS" [style=dotted]
+    }
+	
+	subgraph cluster21 {
+        "Dylan" -> "Dylan 2014.1" [style=dotted]
+    }
+	
+	subgraph cluster22 {
+        "Clojure" -> "Clojure 1.6" [style=dotted]
+    }
+	
+	subgraph cluster23 {
+        "Haskell" -> "Haskell 98" -> "Haskell Prime" -> "Haskell 2010" [style=dotted]
+    }
+	
+	subgraph cluster24 {
+        "F#" -> "F# 2.0" -> "F# 3.0" -> "F# 3.1.1" [style=dotted]
+    }
+	
+	subgraph cluster25 {
+        "REBOL" -> "REBOL 2" -> "REBOL/Command" -> "REBOL/View" -> "REBOL/SDK" -> "REBOL 3" [style=dotted]
+    }
+	
+	subgraph cluster26 {
+        "C++" -> "C++ 0x" -> "C++ 1y" [style=dotted]
+    }
+	
+	subgraph cluster27 {
+        "C#" -> "C# 2" -> "C# 3" -> "C# 4" -> "C# 5" [style=dotted]
+    }
+	
+	subgraph cluster28 {
+        "Objective-C" -> "GNU Objective-C" -> "Objective-C 2.0" [style=dotted]
+    }
+	
+	subgraph cluster29 {
+        "Swift" -> "Swift 1.2" [style=dotted]
+    }
+	
+	subgraph cluster30 {
+        "Erlang" -> "Erlang 17.5" [style=dotted]
+    }
+	
+	subgraph cluster31 {
+        "Elixir" -> "Elixir 1.0" [style=dotted]
+    }
+	
+	subgraph cluster32 {
+        "Go" -> "Go 1.0" -> "Go 1.4" [style=dotted]
+    }
+	
+	subgraph cluster33 {
+        "Javascript" -> "Javascript ES1" -> "Javascript ES3" -> "Javascript ES5.1" -> "Javascript ES6" [style=dotted]
+    }
+	
+	subgraph cluster34 {
+        "Rust" -> "Rust 1.0" [style=dotted]
+    }
+	
+	subgraph cluster35 {
+        "Scala" -> "Scala 2.0" -> "Scala 2.11.6" [style=dotted]
+    }
+	
+	subgraph cluster36 {
+        "Java" -> "J2SE 5" [style=dotted]
+    }
+	
+	subgraph cluster37 {
+        "Perl" -> "Perl 5" -> "Perl 5.6" -> "Perl 5.8" -> "Perl 5.10" -> "Perl 5.20" [style=dotted]
+    }
+	
+	subgraph cluster38 {
+        "Python" -> "Python 2" -> "Python 3" [style=dotted]
+    }
+	
+	subgraph cluster39 {
+        "PHP/FI" -> "PHP 3" -> "PHP 4" -> "PHP 5" -> "PHP 5.6.10" [style=dotted]
+    }
+	
+	subgraph cluster40 {
+        "Ruby" -> "Ruby 1.2" -> "Ruby 1.4" -> "Ruby 1.6" -> "Ruby 1.8" -> "Ruby 1.9" -> "Ruby 2.1" -> "Ruby 2.2" [style=dotted]
+    }
+	
+	subgraph cluster41 {
+        "Groovy" -> "Groovy 2.0" -> "Groovy 2.4.3" [style=dotted]
+    }
+	
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        "Haskell" [shape=circle, style=filled, fontcolor=white, fillcolor=brown]
+        
+            
+            "Haskell 98" [shape=circle, style=filled, fontcolor=white, fillcolor=brown]
+        
+            
+            "Haskell Prime" [shape=circle, style=filled, fontcolor=white, fillcolor=brown]
+        
+            
+            "Haskell 2010" [shape=circle, style=filled, fontcolor=white, fillcolor=brown]
+        
+    
+        
+        
+        
+        
+        
+        
+        "Swift" [shape=circle, style=filled, fontcolor=black, fillcolor=orange]
+        
+            
+            "Swift 1.2" [shape=circle, style=filled, fontcolor=black, fillcolor=orange]
+        
+    
+        
+        
+        "Elixir" [shape=circle, style=filled, fontcolor=black, fillcolor=lightblue]
+        
+            
+            "Elixir 1.0" [shape=circle, style=filled, fontcolor=black, fillcolor=lightblue]
+        
+    
+        
+        "Go" [shape=circle, style=filled, fontcolor=white, fillcolor=black]
+        
+            
+            "Go 1.0" [shape=circle, style=filled, fontcolor=white, fillcolor=black]
+        
+            
+            "Go 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=black]
+        
+    
+        
+        "Javascript" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+        
+            
+            "Javascript ES1" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+        
+            
+            "Javascript ES3" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+        
+            
+            "Javascript ES5.1" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+        
+            
+            "Javascript ES6" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+        
+    
+        
+        "Rust" [shape=circle, style=filled, fontcolor=black, fillcolor=lightgrey]
+        
+            
+            "Rust 1.0" [shape=circle, style=filled, fontcolor=black, fillcolor=lightgrey]
+        
+    
+        
+        
+        "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+            
+            "J2SE 5" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+    
+        
+        
+        "Python" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+        
+            
+            "Python 2" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+        
+            
+            "Python 3" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+        
+    
+        
+        "PHP/FI" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+        
+            
+            "PHP 3" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+        
+            
+            "PHP 4" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+        
+            
+            "PHP 5" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+        
+            
+            "PHP 5.6.10" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+        
+    
+        
+        "Ruby" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 1.6" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 1.8" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 1.9" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 2.1" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+            
+            "Ruby 2.2" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        
+    
+        
+
+    
+}
