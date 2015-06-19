@@ -2,7 +2,7 @@ require 'erb'
 require 'pry'
 
 class Timeline
-  attr_accessor :languages, :recent_languages
+  attr_accessor :languages, :recent_languages, :colors
 
   def initialize(filter = nil)
     self.languages = {
@@ -67,7 +67,7 @@ class Timeline
       "Planner" => { year: 1970, author: "Carl Hewitt", wikipedia: "https://en.wikipedia.org/wiki/Planner_(programming_language)",
         pioneer: [ "logic programming" ],
         versions: [],
-        influenced: [] },
+        influenced: [ "Prolog" ] },
       "Prolog" => { year: 1972, author: "Alain Colmerauer", wikipedia: "https://en.wikipedia.org/wiki/Prolog",
         pioneer: [ "logic programming", "theorem proving", "natural language processing", "relations, represented as facts and rules", "running a query over these relations" ],
         versions: [],
@@ -126,10 +126,6 @@ class Timeline
         pioneer: [ "design by contract", "command-query separation", "uniform-access principle", "single-choice principle", "open-closed principle", "option-operand separation" ],
         versions: [ ["SmartEiffel", 1994], ["LibertyEiffel", 2013] ],
         influenced: [ "ADA 2012", "C#", "D", "Java", "Ruby", "Scala" ] },
-      "Pike" => { year: 1994, author: "Fredrik Hübinette", wikipedia: "https://en.wikipedia.org/wiki/Pike_(programming_language)",
-        pioneer: ["MUD"],
-        versions: [],
-        influenced: [ "Prolog" ] },
       "ISWIM" => { year: 1965, author: "Peter J. Landin", wikipedia: "https://en.wikipedia.org/wiki/ISWIM",
         pioneer: ["syntactic sugaring of lambda calculus", "higher order functions", "lexically scoped variables" ],
         versions: [],
@@ -217,7 +213,7 @@ class Timeline
       "C++" => { year: 1983, author: "Bjarne Stroustrup", wikipedia: "https://en.wikipedia.org/wiki/C++",
         pioneer: ["enhance the C language with Simula-like features", "influences:  ALGOL 68, Ada, CLU and ML"],
         versions: [ ["C++ 0x", 2011], ["C++ 1y", 2014] ],
-        influenced: [ "PHP/FI", "Perl", "Lua", "Pike", "ADA 95", "Java", "D", "C99" ] },
+        influenced: [ "PHP/FI", "Perl", "Lua", "ADA 95", "Java", "D", "C99" ] },
       "C#" => { year: 2000, author: "Anders Hejlsberg/Microsoft", wikipedia: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
         versions: [ ["C# 2", 2005], ["C# 3", 2007], ["C# 4", 2010], ["C# 5", 2013]],
         influenced: [ "Hack", "D", "Swift" ] },
@@ -226,7 +222,6 @@ class Timeline
         versions: [ ["GNU Objective-C", 1992], ["Objective-C 2.0", 2006] ],
         influenced: [ "Groovy", "Java", "Swift" ] },
       "Swift" => { year: 2014, author: "Chris Lattner/Apple", wikipedia: "https://en.wikipedia.org/wiki/Swift_(programming_language)",
-        highlight: "orange",
         versions: [ ["Swift 1.2", 2015] ],
         influenced: [] },
       "Erlang" => { year: 1986, author: "Joe Armstrong, Robert Virding and Mike Williams", wikipedia: "https://en.wikipedia.org/wiki/Erlang_(programming_language)",
@@ -237,11 +232,9 @@ class Timeline
         versions: [ ["Elixir 1.0", 2014]],
         influenced: [] },
       "Go" => { year: 2007, author: "Robert Griesemer, Rob Pike, Ken Thompson/Google", wikipedia: "https://en.wikipedia.org/wiki/Go_(programming_language)",
-        highlight: "black",
         versions: [ ["Go 1.0", 2012], ["Go 1.4", 2015] ],
         influenced: [] },
       "Javascript" => { year: 1995, author: "Brendan Eich", wikipedia: "https://en.wikipedia.org/wiki/JavaScript",
-        highlight: "grey",
         versions: [ ["Javascript ES1", 1997], ["Javascript ES3", 1999], ["Javascript ES5.1", 2011], ["Javascript ES6", 2014] ],
         influenced: [] },
       "Rust" => { year: 2011, author: "Graydon Hoare, then Rust Project Developers", wikipedia: "https://en.wikipedia.org/wiki/Rust_(programming_language)",
@@ -260,7 +253,6 @@ class Timeline
         versions: [],
         influenced: [] },
       "Java" => { year: 1995, author: "James Gosling/Sun Microsystems", wikipedia: "https://en.wikipedia.org/wiki/Java_(programming_language)",
-        highlight: "purple",
         pioneer: ["general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible"],
         versions: [ ["J2SE 5", 2005]],
         influenced: [ "ADA 2005", "C#", "Clojure", "D", "Javascript", "Scala", "PHP/FI", "Groovy", "Hack" ] },
@@ -269,7 +261,6 @@ class Timeline
         versions: [ ["Perl 5", 1993], ["Perl 5.6", 2000], ["Perl 5.8", 2002], ["Perl 5.10", 2007], ["Perl 5.20", 2014]],
         influenced: [ "Groovy", "Python", "PHP/FI", "Javascript", "Julia" ] },
       "Python" => { year: 1991, author: "Guido van Rossum", wikipedia: "https://en.wikipedia.org/wiki/Python_(programming_language)",
-        highlight: "yellow",
         pioneer: ["intended to be a highly readable language"],
         versions: [ ["Python 2", 2000], ["Python 3", 2008]],
         influenced: [ "D", "F#", "Go", "Groovy", "Javascript", "Julia", "Ruby", "Swift" ] },
@@ -277,7 +268,6 @@ class Timeline
         versions: [],
         influenced: [ "Groovy" ] },
       "PHP/FI" => { year: 1995, author: "Rasmus Lerdorf/The PHP Group", wikipedia: "https://en.wikipedia.org/wiki/PHP",
-        highlight: "blue",
         pioneer: ["server-side scripting language"],
         versions: [ ["PHP 3", 1997], ["PHP 4", 2000], ["PHP 5", 2004], ["PHP 5.6.10", 2015]],
         influenced: [] },
@@ -288,7 +278,6 @@ class Timeline
         versions: [],
         influenced: [] },
       "Ruby" => { year: 1996, author: "Yukihiro Matsumoto", wikipedia: "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
-        highlight: "red",
         pioneer: ["dynamic, reflective, object-oriented, general-purpose programming language"],
         versions: [ ["Ruby 1.2", 1998], ["Ruby 1.4", 1999], ["Ruby 1.6", 2000], ["Ruby 1.8", 2003], ["Ruby 1.9", 2007], ["Ruby 2.1", 2013], ["Ruby 2.2", 2014]],
         influenced: [ "Groovy", "Clojure", "Elixir", "Julia", "Swift" ] },
@@ -298,7 +287,30 @@ class Timeline
       }
 
       self.recent_languages = ["C# 5", "C++ 1y", "Swift 1.2", "C11", "Perl 5.20", "ADA 2012", "Delphi XE4", "COBOL 2014", "FORTRAN 2015", "Rust 1.0", "Elixir 1.0", "Erlang 17.5", "Javascript ES6", "Go 1.0", "Self 4.5", "Julia", "Haskell 2010", "F# 3.1.1"]
-      #self.ancestors = ["Speedcode", "ALGOL 58", "FLOW-MATIC", "LISP"]
+      self.colors = {
+        "Swift" => { fillcolor: "orange", fontcolor: "black" },
+        "Go" => { fillcolor: "black" },
+        "Javascript" => { fillcolor: "grey" },
+        "Java" => { fillcolor: "purple" },
+        "Python" => { fillcolor: "green", fontcolor: "black" },
+        "PHP/FI" => { fillcolor: "blue" },
+        "Ruby" => { fillcolor: "red" },
+        "Elixir" => { fillcolor: "lightblue", fontcolor: "black" },
+        "Rust" => { fillcolor: "lightgrey", fontcolor: "black" },
+        "Haskell" => { fillcolor: "brown" }
+      }
+
+      # replicate the color configuration to each of the language versions as well
+      languages.each do |key|
+        if colors.keys.include?(key)
+          languages[key][:versions].map(&:first).each do |version|
+            colors.merge!(version => colors[key])
+          end
+        end
+      end
+      colors.values.each do |color_set|
+        color_set[:fontcolor] = "white" unless color_set[:fontcolor]
+      end
 
       filter_ancestors(filter)
   end
@@ -337,8 +349,7 @@ class Timeline
 
   def grouped_by_year(versions = true)
     languages_filtered.keys.inject([]) do |acc, key|
-      acc += [[key, languages_filtered[key][:year]]] +
-        ( versions ? languages_filtered[key][:versions] : [] )
+      acc += [[key, languages_filtered[key][:year]]] + ( versions ? languages_filtered[key][:versions] : [] )
     end.group_by { |a| a.last }
   end
 
@@ -358,7 +369,6 @@ class Timeline
 
   def valid_group(list, accumulator)
     [list,
-      recent_languages.select { |e| accumulator.include?(e) },
       ancestors.select { |e| accumulator.include?(e) } ]
   end
 
@@ -394,15 +404,15 @@ class Timeline
   def generate
     @ancestors = ancestors
 
+    @valid_versions = @valid_influenced = []
     @main_ranks_str = formatted_main_rank_groups(true)
-    @valid_influenced = []
-    @valid_versions, @recent_languages_filtered, ancestors_filtered = valid_versions(" -> ")
+    @valid_versions, ancestors_filtered = valid_versions(" -> ")
     @ancestors_str = escape_list(ancestors_filtered)
     render_erb('genealogy_versions')
 
+    @valid_versions = @valid_influenced = []
     @main_ranks_str = formatted_main_rank_groups(false)
-    @valid_versions = []
-    @valid_influenced, @recent_languages_filtered, ancestors_filtered = valid_influenced()
+    @valid_influenced, ancestors_filtered = valid_influenced()
     @ancestors_str = escape_list(ancestors_filtered)
     render_erb('genealogy_influenced')
   end

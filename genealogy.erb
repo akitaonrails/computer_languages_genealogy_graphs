@@ -3,6 +3,7 @@ digraph G {
     nodesep="1.0 equally";
     ratio=auto;
     concentrate=true;
+    compound=true;
     {
         node [shape=box, fontsize=16];
         /* the time-line graph */
@@ -18,16 +19,29 @@ digraph G {
 
 	<% @valid_versions.each_with_index do |(key, value), index| %>
 	subgraph cluster<%=index%> {
-        <% if value[:highlight] %>
-        node [style=filled,color=white];
-        style=filled;
-        color=<%= value[:highlight] %>;
-        <% end %>
         "<%= key %>" -> <%= value[:formatted_versions] %> [style=dotted]
     }
 	<% end %>
 
-	<% @valid_influenced.each do |key, value| %>
-	"<%= key %>" -> { <%= value[:formatted_influenced] %> }
-	<% end %>
+    <% @valid_versions.each do |(key, value)| %>
+        <% next unless @colors[key] %>
+        "<%= key %>" [shape=circle, style=filled, fontcolor=<%= @colors[key][:fontcolor] %>, fillcolor=<%= @colors[key][:fillcolor] %>]
+        <% value[:versions].map(&:first).each do |key| %>
+            <% next unless @colors[key] %>
+            "<%= key %>" [shape=circle, style=filled, fontcolor=<%= @colors[key][:fontcolor] %>, fillcolor=<%= @colors[key][:fillcolor] %>]
+        <% end %>
+    <% end %>
+
+    <% @valid_influenced.each do |(key, value)| %>
+        <% if @colors[key] %>
+        "<%= key %>" [shape=circle, style=filled, fontcolor=<%= @colors[key][:fontcolor] %>, fillcolor=<%= @colors[key][:fillcolor] %>]
+        <% end %>
+        <% value[:influenced].each do |influenced| %>
+            <% if @colors[influenced] %>
+                "<%= key %>" -> "<%= influenced %>" [color=<%= @colors[influenced][:fillcolor] %>]
+            <% else %>
+                "<%= key %>" -> "<%= influenced %>" [style=dotted]
+            <% end %>
+        <% end %>
+    <% end %>
 }
