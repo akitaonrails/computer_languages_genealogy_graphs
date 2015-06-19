@@ -32,13 +32,13 @@ digraph G {
     
     { rank = same; 1995; "FORTRAN 90"; "Dylan"; "GNU Objective-C"; "Oberon-2"; "Python"; "New AWK"; "Lua"; "Perl 5"; "ANSI C"; "Standard ML"; "Haskell"; "SmartEiffel"; "occam 2.1" }
     
-    { rank = same; 2000; "FORTRAN 95"; "Haskell 98"; "REBOL"; "Javascript ES1"; "PHP 3"; "ISO MODULA-2"; "Squeak"; "Caché"; "OCaml"; "Ruby"; "Delphi"; "ADA 95"; "Javascript"; "Java"; "PHP/FI"; "Delphi 5"; "C99"; "REBOL 2"; "Javascript ES3"; "Ruby 1.4"; "Scheme R5RS"; "Ruby 1.2" }
+    { rank = same; 2000; "FORTRAN 95"; "Haskell 98"; "REBOL"; "Javascript ES1"; "PHP 3"; "ISO MODULA-2"; "Squeak"; "Caché"; "OCaml"; "Ruby"; "Delphi"; "ADA 95"; "Javascript"; "Java"; "PHP/FI"; "Delphi 5"; "C99"; "REBOL 2"; "Javascript ES3"; "Ruby 1.4"; "Scheme R5RS"; "J2SE 1.2"; "Ruby 1.2" }
     
-    { rank = same; 2005; "FORTRAN 2003"; "PHP 5"; "Delphi 7"; "REBOL/SDK"; "Scala"; "Factor"; "Ruby 1.8"; "COBOL 2002"; "REBOL/View"; "Perl 5.8"; "D"; "REBOL/Command"; "C#"; "Perl 5.6"; "Python 2"; "PHP 4"; "Ruby 1.6" }
+    { rank = same; 2005; "FORTRAN 2003"; "PHP 5"; "Delphi 7"; "REBOL/SDK"; "Scala"; "Factor"; "Ruby 1.8"; "COBOL 2002"; "REBOL/View"; "J2SE 1.4"; "Perl 5.8"; "D"; "REBOL/Command"; "C#"; "Perl 5.6"; "Python 2"; "PHP 4"; "Ruby 1.6" }
     
-    { rank = same; 2010; "Oberon-07"; "D2"; "Scheme R7RS"; "Clojure"; "C# 3"; "Go"; "Perl 5.10"; "Ruby 1.9"; "Groovy"; "Pharo"; "REBOL 3"; "Python 3"; "Haskell Prime"; "Objective-C 2.0"; "Scala 2.0"; "F#"; "C# 2"; "J2SE 5" }
+    { rank = same; 2010; "Oberon-07"; "D2"; "Scheme R7RS"; "Clojure"; "C# 3"; "Go"; "Perl 5.10"; "Ruby 1.9"; "Groovy"; "Pharo"; "REBOL 3"; "Python 3"; "Haskell Prime"; "Objective-C 2.0"; "Scala 2.0"; "Java SE 6"; "F#"; "C# 2"; "J2SE 5" }
     
-    { rank = same; 2015; "FORTRAN 2008"; "Haskell 2010"; "F# 2.0"; "C# 4"; "Delphi XE"; "C11"; "C++ 0x"; "Javascript ES5.1"; "Rust"; "Delphi XE4"; "LibertyEiffel"; "C# 5"; "Ruby 2.1"; "COBOL 2014"; "Self 4.5"; "Dylan 2014.1"; "Clojure 1.6"; "F# 3.1.1"; "C++ 1y"; "Swift"; "Elixir 1.0"; "Javascript ES6"; "Perl 5.20"; "Hack"; "Ruby 2.2"; "ADA 2012"; "Julia"; "F# 3.0"; "Elixir"; "Go 1.0"; "Groovy 2.0" }
+    { rank = same; 2015; "FORTRAN 2008"; "Haskell 2010"; "F# 2.0"; "C# 4"; "Delphi XE"; "C11"; "C++ 0x"; "Javascript ES5.1"; "Rust"; "Java SE 7"; "Delphi XE4"; "LibertyEiffel"; "C# 5"; "Ruby 2.1"; "COBOL 2014"; "Self 4.5"; "Dylan 2014.1"; "Clojure 1.6"; "F# 3.1.1"; "C++ 1y"; "Swift"; "Elixir 1.0"; "Javascript ES6"; "Java SE 8"; "Perl 5.20"; "Hack"; "Ruby 2.2"; "ADA 2012"; "Julia"; "F# 3.0"; "Elixir"; "Go 1.0"; "Groovy 2.0" }
     
 
 	
@@ -187,7 +187,7 @@ digraph G {
     }
 	
 	subgraph cluster36 {
-        "Java" -> "J2SE 5" [style=dotted]
+        "Java" -> "J2SE 1.2" -> "J2SE 1.4" -> "J2SE 5" -> "Java SE 6" -> "Java SE 7" -> "Java SE 8" [style=dotted]
     }
 	
 	subgraph cluster37 {
@@ -306,7 +306,22 @@ digraph G {
         "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
         
             
+            "J2SE 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+            
+            "J2SE 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+            
             "J2SE 5" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+            
+            "Java SE 6" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+            
+            "Java SE 7" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        
+            
+            "Java SE 8" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
         
     
         

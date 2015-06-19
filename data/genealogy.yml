@@ -921,8 +921,18 @@ Java:
     object-oriented, and specifically designed to have as few implementation dependencies
     as possible
   :versions:
+  - - J2SE 1.2
+    - 1998
+  - - J2SE 1.4
+    - 2002
   - - J2SE 5
     - 2005
+  - - Java SE 6
+    - 2006
+  - - Java SE 7
+    - 2011
+  - - Java SE 8
+    - 2014
   :influenced:
   - ADA 2005
   - C#
