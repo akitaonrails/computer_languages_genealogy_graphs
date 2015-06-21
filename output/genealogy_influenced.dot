@@ -456,6 +456,14 @@ digraph G {
                 "Hope" -> "Standard ML" [style=dotted]
             
         
+            
+                "Hope" -> "Miranda" [style=dotted]
+            
+        
+            
+                "Hope" -> "Haskell" [color=brown]
+            
+        
     
         
         

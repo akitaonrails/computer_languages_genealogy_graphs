@@ -509,9 +509,14 @@ Hope:
   :year: 1970
   :author: Edinburgh University
   :wikipedia: https://en.wikipedia.org/wiki/Hope_(programming_language)
+  :summary:
+  - first languages with call-by-pattern evaluation and algebraic data types
+  - its 'patterns' may qualify as a hybrid between call-by-pattern and regular expression matching
   :versions: []
   :influenced:
   - Standard ML
+  - Miranda
+  - Haskell
 occam:
   :year: 1983
   :author: INMOS
