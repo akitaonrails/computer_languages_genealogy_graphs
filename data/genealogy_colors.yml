@@ -1,24 +1,24 @@
 ---
 Swift:
-  :fillcolor: orange
-  :fontcolor: black
+  :fillcolor: darkorange3
+  :fontcolor: white
 Go:
-  :fillcolor: black
+  :fillcolor: gray42
   :fontcolor: white
 Javascript:
-  :fillcolor: grey
+  :fillcolor: lightslategray
   :fontcolor: white
 Java:
-  :fillcolor: purple
+  :fillcolor: darkorchid4
   :fontcolor: white
 Python:
-  :fillcolor: green
-  :fontcolor: black
+  :fillcolor: darkolivegreen4
+  :fontcolor: white
 PHP/FI:
-  :fillcolor: blue
+  :fillcolor: royalblue2
   :fontcolor: white
 Ruby:
-  :fillcolor: red
+  :fillcolor: red3
   :fontcolor: white
 Elixir:
   :fillcolor: lightblue
@@ -28,4 +28,7 @@ Rust:
   :fontcolor: black
 Haskell:
   :fillcolor: brown
+  :fontcolor: white
+Clojure:
+  :fillcolor: goldenrod3
   :fontcolor: white

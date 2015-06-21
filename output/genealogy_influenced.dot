@@ -122,7 +122,7 @@ digraph G {
             
         
             
-                "Modula" -> "Go" [color=black]
+                "Modula" -> "Go" [color=gray42]
             
         
     
@@ -133,7 +133,7 @@ digraph G {
             
         
             
-                "Pascal" -> "Java" [color=purple]
+                "Pascal" -> "Java" [color=darkorchid4]
             
         
             
@@ -153,21 +153,21 @@ digraph G {
             
         
             
-                "Pascal" -> "Go" [color=black]
+                "Pascal" -> "Go" [color=gray42]
             
         
     
         
         
             
-                "Oberon" -> "Go" [color=black]
+                "Oberon" -> "Go" [color=gray42]
             
         
     
         
         
             
-                "Mesa" -> "Java" [color=purple]
+                "Mesa" -> "Java" [color=darkorchid4]
             
         
             
@@ -178,7 +178,7 @@ digraph G {
         
         
             
-                "ABC" -> "Python" [color=green]
+                "ABC" -> "Python" [color=darkolivegreen4]
             
         
     
@@ -214,18 +214,18 @@ digraph G {
             
         
             
-                "CLU" -> "Ruby" [color=red]
+                "CLU" -> "Ruby" [color=red3]
             
         
             
-                "CLU" -> "Swift" [color=orange]
+                "CLU" -> "Swift" [color=darkorange3]
             
         
     
         
         
             
-                "AWK" -> "Javascript" [color=grey]
+                "AWK" -> "Javascript" [color=lightslategray]
             
         
             
@@ -259,11 +259,11 @@ digraph G {
             
         
             
-                "ADA" -> "Ruby" [color=red]
+                "ADA" -> "Ruby" [color=red3]
             
         
             
-                "ADA" -> "Java" [color=purple]
+                "ADA" -> "Java" [color=darkorchid4]
             
         
     
@@ -315,7 +315,7 @@ digraph G {
             
         
             
-                "C" -> "Go" [color=black]
+                "C" -> "Go" [color=gray42]
             
         
             
@@ -323,11 +323,11 @@ digraph G {
             
         
             
-                "C" -> "Java" [color=purple]
+                "C" -> "Java" [color=darkorchid4]
             
         
             
-                "C" -> "Javascript" [color=grey]
+                "C" -> "Javascript" [color=lightslategray]
             
         
             
@@ -335,11 +335,11 @@ digraph G {
             
         
             
-                "C" -> "Python" [color=green]
+                "C" -> "Python" [color=darkolivegreen4]
             
         
             
-                "C" -> "PHP/FI" [color=blue]
+                "C" -> "PHP/FI" [color=royalblue2]
             
         
     
@@ -373,19 +373,19 @@ digraph G {
             
         
             
-                "Smalltalk" -> "Java" [color=purple]
+                "Smalltalk" -> "Java" [color=darkorchid4]
             
         
             
-                "Smalltalk" -> "PHP 5" [color=blue]
+                "Smalltalk" -> "PHP 5" [color=royalblue2]
             
         
             
-                "Smalltalk" -> "Python" [color=green]
+                "Smalltalk" -> "Python" [color=darkolivegreen4]
             
         
             
-                "Smalltalk" -> "Ruby" [color=red]
+                "Smalltalk" -> "Ruby" [color=red3]
             
         
             
@@ -412,11 +412,11 @@ digraph G {
             
         
             
-                "Eiffel" -> "Java" [color=purple]
+                "Eiffel" -> "Java" [color=darkorchid4]
             
         
             
-                "Eiffel" -> "Ruby" [color=red]
+                "Eiffel" -> "Ruby" [color=red3]
             
         
             
@@ -468,7 +468,7 @@ digraph G {
         
         
             
-                "occam" -> "Go" [color=black]
+                "occam" -> "Go" [color=gray42]
             
         
     
@@ -504,7 +504,7 @@ digraph G {
         
         
             
-                "Self" -> "Javascript" [color=grey]
+                "Self" -> "Javascript" [color=lightslategray]
             
         
             
@@ -535,7 +535,7 @@ digraph G {
             
         
             
-                "ML" -> "Clojure" [style=dotted]
+                "ML" -> "Clojure" [color=goldenrod3]
             
         
             
@@ -596,7 +596,7 @@ digraph G {
             
         
             
-                "Lisp" -> "Python" [color=green]
+                "Lisp" -> "Python" [color=darkolivegreen4]
             
         
             
@@ -604,7 +604,7 @@ digraph G {
             
         
             
-                "Lisp" -> "Ruby" [color=red]
+                "Lisp" -> "Ruby" [color=red3]
             
         
             
@@ -619,7 +619,7 @@ digraph G {
         
         
             
-                "Common Lisp" -> "Clojure" [style=dotted]
+                "Common Lisp" -> "Clojure" [color=goldenrod3]
             
         
             
@@ -638,7 +638,7 @@ digraph G {
             
         
             
-                "Scheme" -> "Clojure" [style=dotted]
+                "Scheme" -> "Clojure" [color=goldenrod3]
             
         
             
@@ -646,11 +646,11 @@ digraph G {
             
         
             
-                "Scheme" -> "Javascript" [color=grey]
+                "Scheme" -> "Javascript" [color=lightslategray]
             
         
             
-                "Scheme" -> "Ruby" [color=red]
+                "Scheme" -> "Ruby" [color=red3]
             
         
             
@@ -661,14 +661,16 @@ digraph G {
         
         
             
-                "Dylan" -> "Python" [color=green]
+                "Dylan" -> "Python" [color=darkolivegreen4]
             
         
             
-                "Dylan" -> "Ruby" [color=red]
+                "Dylan" -> "Ruby" [color=red3]
             
         
     
+        
+        "Clojure" [shape=circle, style=filled, fontcolor=white, fillcolor=goldenrod3]
         
         
             
@@ -689,11 +691,11 @@ digraph G {
             
         
             
-                "Haskell" -> "Clojure" [style=dotted]
+                "Haskell" -> "Clojure" [color=goldenrod3]
             
         
             
-                "Haskell" -> "Python" [color=green]
+                "Haskell" -> "Python" [color=darkolivegreen4]
             
         
             
@@ -701,7 +703,7 @@ digraph G {
             
         
             
-                "Haskell" -> "Swift" [color=orange]
+                "Haskell" -> "Swift" [color=darkorange3]
             
         
     
@@ -715,7 +717,7 @@ digraph G {
         
         
             
-                "C++" -> "PHP/FI" [color=blue]
+                "C++" -> "PHP/FI" [color=royalblue2]
             
         
             
@@ -731,7 +733,7 @@ digraph G {
             
         
             
-                "C++" -> "Java" [color=purple]
+                "C++" -> "Java" [color=darkorchid4]
             
         
             
@@ -754,7 +756,7 @@ digraph G {
             
         
             
-                "C#" -> "Swift" [color=orange]
+                "C#" -> "Swift" [color=darkorange3]
             
         
     
@@ -765,11 +767,11 @@ digraph G {
             
         
             
-                "Objective-C" -> "Java" [color=purple]
+                "Objective-C" -> "Java" [color=darkorchid4]
             
         
             
-                "Objective-C" -> "Swift" [color=orange]
+                "Objective-C" -> "Swift" [color=darkorange3]
             
         
     
@@ -780,7 +782,7 @@ digraph G {
             
         
             
-                "Erlang" -> "Clojure" [style=dotted]
+                "Erlang" -> "Clojure" [color=goldenrod3]
             
         
             
@@ -801,7 +803,7 @@ digraph G {
         
         
             
-                "Rust" -> "Swift" [color=orange]
+                "Rust" -> "Swift" [color=darkorange3]
             
         
     
@@ -812,12 +814,12 @@ digraph G {
             
         
             
-                "Lua" -> "Javascript" [color=grey]
+                "Lua" -> "Javascript" [color=lightslategray]
             
         
     
         
-        "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
         
             
@@ -829,7 +831,7 @@ digraph G {
             
         
             
-                "Java" -> "Clojure" [style=dotted]
+                "Java" -> "Clojure" [color=goldenrod3]
             
         
             
@@ -837,7 +839,7 @@ digraph G {
             
         
             
-                "Java" -> "Javascript" [color=grey]
+                "Java" -> "Javascript" [color=lightslategray]
             
         
             
@@ -845,7 +847,7 @@ digraph G {
             
         
             
-                "Java" -> "PHP/FI" [color=blue]
+                "Java" -> "PHP/FI" [color=royalblue2]
             
         
             
@@ -864,15 +866,15 @@ digraph G {
             
         
             
-                "Perl" -> "Python" [color=green]
+                "Perl" -> "Python" [color=darkolivegreen4]
             
         
             
-                "Perl" -> "PHP/FI" [color=blue]
+                "Perl" -> "PHP/FI" [color=royalblue2]
             
         
             
-                "Perl" -> "Javascript" [color=grey]
+                "Perl" -> "Javascript" [color=lightslategray]
             
         
             
@@ -881,7 +883,7 @@ digraph G {
         
     
         
-        "Python" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+        "Python" [shape=circle, style=filled, fontcolor=white, fillcolor=darkolivegreen4]
         
         
             
@@ -893,7 +895,7 @@ digraph G {
             
         
             
-                "Python" -> "Go" [color=black]
+                "Python" -> "Go" [color=gray42]
             
         
             
@@ -901,7 +903,7 @@ digraph G {
             
         
             
-                "Python" -> "Javascript" [color=grey]
+                "Python" -> "Javascript" [color=lightslategray]
             
         
             
@@ -909,16 +911,16 @@ digraph G {
             
         
             
-                "Python" -> "Ruby" [color=red]
+                "Python" -> "Ruby" [color=red3]
             
         
             
-                "Python" -> "Swift" [color=orange]
+                "Python" -> "Swift" [color=darkorange3]
             
         
     
         
-        "Ruby" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        "Ruby" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
         
             
@@ -926,7 +928,7 @@ digraph G {
             
         
             
-                "Ruby" -> "Clojure" [style=dotted]
+                "Ruby" -> "Clojure" [color=goldenrod3]
             
         
             
@@ -938,7 +940,7 @@ digraph G {
             
         
             
-                "Ruby" -> "Swift" [color=orange]
+                "Ruby" -> "Swift" [color=darkorange3]
             
         
     

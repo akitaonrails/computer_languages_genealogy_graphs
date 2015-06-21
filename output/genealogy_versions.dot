@@ -235,6 +235,12 @@ digraph G {
         
         
         
+        "Clojure" [shape=circle, style=filled, fontcolor=white, fillcolor=goldenrod3]
+        
+            
+            "Clojure 1.6" [shape=circle, style=filled, fontcolor=white, fillcolor=goldenrod3]
+        
+    
         
         "Haskell" [shape=circle, style=filled, fontcolor=white, fillcolor=brown]
         
@@ -254,10 +260,10 @@ digraph G {
         
         
         
-        "Swift" [shape=circle, style=filled, fontcolor=black, fillcolor=orange]
+        "Swift" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorange3]
         
             
-            "Swift 1.2" [shape=circle, style=filled, fontcolor=black, fillcolor=orange]
+            "Swift 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorange3]
         
     
         
@@ -269,29 +275,29 @@ digraph G {
         
     
         
-        "Go" [shape=circle, style=filled, fontcolor=white, fillcolor=black]
+        "Go" [shape=circle, style=filled, fontcolor=white, fillcolor=gray42]
         
             
-            "Go 1.0" [shape=circle, style=filled, fontcolor=white, fillcolor=black]
+            "Go 1.0" [shape=circle, style=filled, fontcolor=white, fillcolor=gray42]
         
             
-            "Go 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=black]
+            "Go 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=gray42]
         
     
         
-        "Javascript" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+        "Javascript" [shape=circle, style=filled, fontcolor=white, fillcolor=lightslategray]
         
             
-            "Javascript ES1" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+            "Javascript ES1" [shape=circle, style=filled, fontcolor=white, fillcolor=lightslategray]
         
             
-            "Javascript ES3" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+            "Javascript ES3" [shape=circle, style=filled, fontcolor=white, fillcolor=lightslategray]
         
             
-            "Javascript ES5.1" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+            "Javascript ES5.1" [shape=circle, style=filled, fontcolor=white, fillcolor=lightslategray]
         
             
-            "Javascript ES6" [shape=circle, style=filled, fontcolor=white, fillcolor=grey]
+            "Javascript ES6" [shape=circle, style=filled, fontcolor=white, fillcolor=lightslategray]
         
     
         
@@ -303,77 +309,77 @@ digraph G {
     
         
         
-        "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+        "Java" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
             
-            "J2SE 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+            "J2SE 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
             
-            "J2SE 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+            "J2SE 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
             
-            "J2SE 5" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+            "J2SE 5" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
             
-            "Java SE 6" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+            "Java SE 6" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
             
-            "Java SE 7" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+            "Java SE 7" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
             
-            "Java SE 8" [shape=circle, style=filled, fontcolor=white, fillcolor=purple]
+            "Java SE 8" [shape=circle, style=filled, fontcolor=white, fillcolor=darkorchid4]
         
     
         
         
-        "Python" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+        "Python" [shape=circle, style=filled, fontcolor=white, fillcolor=darkolivegreen4]
         
             
-            "Python 2" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+            "Python 2" [shape=circle, style=filled, fontcolor=white, fillcolor=darkolivegreen4]
         
             
-            "Python 3" [shape=circle, style=filled, fontcolor=black, fillcolor=green]
+            "Python 3" [shape=circle, style=filled, fontcolor=white, fillcolor=darkolivegreen4]
         
     
         
-        "PHP/FI" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+        "PHP/FI" [shape=circle, style=filled, fontcolor=white, fillcolor=royalblue2]
         
             
-            "PHP 3" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+            "PHP 3" [shape=circle, style=filled, fontcolor=white, fillcolor=royalblue2]
         
             
-            "PHP 4" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+            "PHP 4" [shape=circle, style=filled, fontcolor=white, fillcolor=royalblue2]
         
             
-            "PHP 5" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+            "PHP 5" [shape=circle, style=filled, fontcolor=white, fillcolor=royalblue2]
         
             
-            "PHP 5.6.10" [shape=circle, style=filled, fontcolor=white, fillcolor=blue]
+            "PHP 5.6.10" [shape=circle, style=filled, fontcolor=white, fillcolor=royalblue2]
         
     
         
-        "Ruby" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+        "Ruby" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 1.2" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 1.4" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 1.6" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 1.6" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 1.8" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 1.8" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 1.9" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 1.9" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 2.1" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 2.1" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
             
-            "Ruby 2.2" [shape=circle, style=filled, fontcolor=white, fillcolor=red]
+            "Ruby 2.2" [shape=circle, style=filled, fontcolor=white, fillcolor=red3]
         
     
         
